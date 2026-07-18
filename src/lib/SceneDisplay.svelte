@@ -1,11 +1,16 @@
 <script>
+	const IMAGE_DIR = '/scenes'
+	const IMAGE_EXT = 'png'
+
 	/** @type {{ display?: string }} */
 	let { display = '' } = $props()
+
+	let imageUrl = $derived(display ? `${IMAGE_DIR}/${display}.${IMAGE_EXT}` : '')
 </script>
 
 <div
 	class="scene-display"
-	style={display ? `background-image: url('${display}')` : ''}
+	style={imageUrl ? `background-image: url('${imageUrl}')` : ''}
 >
 	{#if !display}
 		<div class="fallback">

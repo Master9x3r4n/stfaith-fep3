@@ -3,7 +3,7 @@
     "sceneId": 1,
     "speaker": "Clair",
     "dialogue": "Hi there! {player.name}!",
-    "display": "/scenes/scene1.png",
+    "display": "scene1",
     "choices": [
       {
         "choiceNumber": 1,
@@ -17,7 +17,7 @@
     "sceneId": 2,
     "speaker": null,
     "dialogue": "Clair Approaches You",
-    "display": "/scenes/scene2.png",
+    "display": "scene2",
     "choices": [
       {
         "choiceNumber": 1,
@@ -31,7 +31,7 @@
     "sceneId": 3,
     "speaker": "Clair",
     "dialogue": "Want to grab lunch, {player.name}?",
-    "display": "/scenes/scene2.png",
+    "display": "scene2",
     "choices": [
       {
         "choiceNumber": 1,
@@ -57,21 +57,21 @@
     "sceneId": 4,
     "speaker": "Clair",
     "dialogue": "Take your time. I'll be around if you change your mind.",
-    "display": "/scenes/scene2.png",
+    "display": "scene2",
     "choices": []
   },
   {
     "sceneId": 5,
     "speaker": "Clair",
     "dialogue": "Ha, figures. Don't work too hard, {player.name}.",
-    "display": "/scenes/scene2.png",
+    "display": "scene2",
     "choices": []
   },
   {
     "sceneId": 6,
     "speaker": "Clair",
     "dialogue": "Great! I know a place just around the corner.",
-    "display": "/scenes/scene2.png",
+    "display": "scene2",
     "choices": []
   }
 ]
