@@ -1,89 +1,89 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from './assets/vite.svg'
-  import heroImg from './assets/hero.png'
-  import Counter from './lib/Counter.svelte'
+	import { onMount } from 'svelte'
+	import { gameState, currentScene, loadScenes, selectChoice } from './lib/gameState.svelte.js'
+	import SceneDisplay from './lib/SceneDisplay.svelte'
+	import DialogBox from './lib/DialogBox.svelte'
+	import ChoicesPanel from './lib/ChoicesPanel.svelte'
+
+	onMount(() => {
+		loadScenes()
+	})
+
+	let scene = $derived(currentScene())
+
+	/** @param {number} choiceNumber */
+	function handleSelect(choiceNumber) {
+		const choice = scene?.choices.find((c) => c.choiceNumber === choiceNumber)
+		if (choice) selectChoice(choice)
+	}
+
+	function handleNext() {
+		const choice = scene?.choices[0]
+		if (choice) selectChoice(choice)
+	}
 </script>
 
-<section id="center">
-  <div class="hero">
-    <img src={heroImg} class="base" width="170" height="179" alt="" />
-    <img src={svelteLogo} class="framework" alt="Svelte logo" />
-    <img src={viteLogo} class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/App.svelte</code> and save to test <code>HMR</code></p>
-  </div>
-  <Counter />
-</section>
+<main class="stage">
+	{#if gameState.status === 'loading'}
+		<div class="status-message">Loading…</div>
+	{:else if gameState.status === 'error'}
+		<div class="status-message">Couldn't load scenes: {gameState.error}</div>
+	{:else if scene}
+		<SceneDisplay display={scene.display} />
 
-<div class="ticks"></div>
+		<div class="overlay">
+			{#if scene.choices.length > 1}
+				<ChoicesPanel choices={scene.choices} onSelect={handleSelect} />
+			{/if}
+      <br><br><br>
+			<DialogBox
+				speaker={scene.speaker}
+				dialogue={scene.dialogue}
+				showNext={scene.choices.length === 1}
+				onNext={handleNext}
+			/>
+		</div>
+	{:else}
+		<div class="status-message">The story has ended.</div>
+	{/if}
+</main>
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true">
-      <use href="/icons.svg#documentation-icon"></use>
-    </svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank" rel="noreferrer">
-          <img class="logo" src={viteLogo} alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://svelte.dev/" target="_blank" rel="noreferrer">
-          <img class="button-icon" src={svelteLogo} alt="" />
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true">
-      <use href="/icons.svg#social-icon"></use>
-    </svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li>
-        <a href="https://github.com/vitejs/vite" target="_blank" rel="noreferrer">
-          <svg class="button-icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#github-icon"></use>
-          </svg>
-          GitHub
-        </a>
-      </li>
-      <li>
-        <a href="https://chat.vite.dev/" target="_blank" rel="noreferrer">
-          <svg class="button-icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#discord-icon"></use>
-          </svg>
-          Discord
-        </a>
-      </li>
-      <li>
-        <a href="https://x.com/vite_js" target="_blank" rel="noreferrer">
-          <svg class="button-icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#x-icon"></use>
-          </svg>
-          X.com
-        </a>
-      </li>
-      <li>
-        <a href="https://bsky.app/profile/vite.dev" target="_blank" rel="noreferrer">
-          <svg class="button-icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#bluesky-icon"></use>
-          </svg>
-          Bluesky
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
+<style>
 
-<div class="ticks"></div>
-<section id="spacer"></section>
+	.stage {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.status-message {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: var(--font-display);
+		font-size: 1.3rem;
+		color: var(--color-text-soft);
+		text-align: center;
+		padding: 24px;
+	}
+
+	.overlay {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		padding: 24px;
+		max-width: 760px;
+		margin: 0 auto;
+	}
+
+	@media (min-width: 640px) {
+		.overlay {
+			padding: 32px;
+		}
+	}
+</style>
