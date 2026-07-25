@@ -18,6 +18,7 @@
 	.choices-panel {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 20%;
 		gap: 12px;
 		width: 100%;
 	}

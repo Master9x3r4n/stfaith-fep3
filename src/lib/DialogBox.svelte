@@ -44,7 +44,7 @@
 		border-radius: var(--radius);
 		padding: 22px 26px 16px;
 		box-shadow: var(--shadow-box);
-		min-height: 84px;
+		min-height: 130px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
