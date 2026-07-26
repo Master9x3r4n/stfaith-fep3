@@ -1,5 +1,61 @@
 [
   {
+    "sceneId": -3,
+    "speaker": null,
+    "dialogue": "Hello... Visitor...",
+    "display": "scene1_fg_1",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": -2,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": -2,
+    "speaker": null,
+    "dialogue": "We shall test your interaction skills through scenes...",
+    "display": "scene1_fg_2",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": -1,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": -1,
+    "speaker": null,
+    "dialogue": "But first... What is your name...?",
+    "display": "scene1_fg_3",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Text",
+        "nextSceneId": 0,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 0,
+    "speaker": null,
+    "dialogue": "What a... lovely name...",
+    "display": "scene1_fg_4",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 1,
+        "scoring": null
+      }
+    ]
+  },
+  {
     "sceneId": 1,
     "speaker": "Clair",
     "dialogue": "Hi there! {player.name}!",

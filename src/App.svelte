@@ -4,6 +4,7 @@
 	import SceneDisplay from './lib/SceneDisplay.svelte'
 	import DialogBox from './lib/DialogBox.svelte'
 	import ChoicesPanel from './lib/ChoicesPanel.svelte'
+    import TextInput from './lib/TextInput.svelte';
 
 	onMount(() => {
 		loadScenes()
@@ -34,12 +35,14 @@
 		<div class="overlay">
 			{#if scene.choices.length > 1}
 				<ChoicesPanel choices={scene.choices} onSelect={handleSelect} />
+			{:else if scene.choices[0]?.description === 'Text'}
+				<TextInput onclick={handleNext}/>
 			{/if}
       <br><br><br>
 			<DialogBox
 				speaker={scene.speaker}
 				dialogue={scene.dialogue}
-				showNext={scene.choices.length === 1}
+				showNext={scene.choices.length === 1 && scene.choices[0].description != 'Text'}
 				onNext={handleNext}
 			/>
 		</div>
