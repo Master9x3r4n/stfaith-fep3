@@ -1,13 +1,13 @@
 <script>
 	import { onMount } from 'svelte'
-	import { gameState, currentScene, loadScenes, selectChoice } from './lib/gameState.svelte.js'
+	import { gameState, currentScene, loadScenes, selectChoice, loadStart, player } from './lib/gameState.svelte.js'
 	import SceneDisplay from './lib/SceneDisplay.svelte'
 	import DialogBox from './lib/DialogBox.svelte'
 	import ChoicesPanel from './lib/ChoicesPanel.svelte'
     import TextInput from './lib/TextInput.svelte';
 
 	onMount(() => {
-		loadScenes()
+		loadStart()
 	})
 
 	let scene = $derived(currentScene())
@@ -22,9 +22,12 @@
 		const choice = scene?.choices[0]
 		if (choice?.description === 'final') {
 			gameState.status = 'final'
-			console.log('tapos na go home')
 		}
 		else if (choice) selectChoice(choice)
+	}
+
+	function handleStart() {
+		loadScenes()
 	}
 </script>
 
@@ -33,8 +36,19 @@
 		<div class="status-message">Loading…</div>
 	{:else if gameState.status === 'error'}
 		<div class="status-message">Couldn't load scenes: {gameState.error}</div>
+	{:else if gameState.status === 'start'}
+		<div class="status-message">
+			<div>STFAITH FEP3</div>
+			<button onclick={handleStart}>Start Game</button>
+		</div>
 	{:else if gameState.status === 'final'}
-		<div class="status-message">The story has ended.</div>
+		<div class="status-message">
+			<div>The story has ended.</div>
+			<div>Believe: {player.score.believe}</div>
+			<div>Doing: {player.score.doing}</div>
+			<div>Trust: {player.score.trust}</div>
+			<button onclick={loadStart}>Restart</button>
+		</div>
 	{:else if scene}
 		<SceneDisplay display={scene.display} />
 
@@ -44,7 +58,7 @@
 			{:else if scene.choices[0]?.description === 'Text'}
 				<TextInput onclick={handleNext}/>
 			{/if}
-      <br><br><br>
+	<br><br><br>
 			<DialogBox
 				speaker={scene.speaker}
 				dialogue={scene.dialogue}
@@ -53,6 +67,8 @@
 			/>
 		</div>
 	{/if}
+
+	<footer>credits</footer>
 </main>
 
 <style>
@@ -66,6 +82,8 @@
 	.status-message {
 		height: 100%;
 		display: flex;
+		flex-direction: column;
+		gap: 12px;
 		align-items: center;
 		justify-content: center;
 		font-family: var(--font-display);

@@ -60,6 +60,11 @@ export function currentScene() {
 	return gameState.scenes.find((s) => s.sceneId === gameState.currentSceneId) ?? null
 }
 
+export async function loadStart() {
+	gameState.status = 'start'
+	gameState.error = null
+}
+
 /**
  * Fetches scenes.json and starts the game at the first scene in the array.
  * @param {string} url
