@@ -44,7 +44,7 @@ export const player = $state({
 	},
 })
 
-/** @type {{ scenes: Scene[], currentSceneId: number|null, status: 'loading'|'ready'|'error', error: string|null }} */
+/** @type {{ scenes: Scene[], currentSceneId: number|null, status: 'loading'|'ready'|'error'|'start'|'final', error: string|null }} */
 export const gameState = $state({
 	scenes: [],
 	currentSceneId: null,

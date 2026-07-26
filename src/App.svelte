@@ -20,7 +20,11 @@
 
 	function handleNext() {
 		const choice = scene?.choices[0]
-		if (choice) selectChoice(choice)
+		if (choice?.description === 'final') {
+			gameState.status = 'final'
+			console.log('tapos na go home')
+		}
+		else if (choice) selectChoice(choice)
 	}
 </script>
 
@@ -29,6 +33,8 @@
 		<div class="status-message">Loading…</div>
 	{:else if gameState.status === 'error'}
 		<div class="status-message">Couldn't load scenes: {gameState.error}</div>
+	{:else if gameState.status === 'final'}
+		<div class="status-message">The story has ended.</div>
 	{:else if scene}
 		<SceneDisplay display={scene.display} />
 
@@ -46,8 +52,6 @@
 				onNext={handleNext}
 			/>
 		</div>
-	{:else}
-		<div class="status-message">The story has ended.</div>
 	{/if}
 </main>
 

@@ -114,20 +114,20 @@
     "speaker": "Clair",
     "dialogue": "Take your time. I'll be around if you change your mind.",
     "display": "scene2",
-    "choices": []
+    "choices": [{"description": "final"}]
   },
   {
     "sceneId": 5,
     "speaker": "Clair",
     "dialogue": "Ha, figures. Don't work too hard, {player.name}.",
     "display": "scene2",
-    "choices": []
+    "choices": [{"description": "final"}]
   },
   {
     "sceneId": 6,
     "speaker": "Clair",
     "dialogue": "Great! I know a place just around the corner.",
     "display": "scene2",
-    "choices": []
+    "choices": [{"description": "final"}]
   }
 ]
