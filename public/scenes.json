@@ -3,7 +3,9 @@
     "sceneId": -3,
     "speaker": null,
     "dialogue": "Hello... Visitor...",
-    "display": "scene1_fg_1",
+    "bg": "bg",
+    "char1": "paimon",
+    "char2": "yoda",
     "choices": [
       {
         "choiceNumber": 1,
@@ -17,7 +19,9 @@
     "sceneId": -2,
     "speaker": null,
     "dialogue": "We shall test your interaction skills through scenes...",
-    "display": "scene1_fg_2",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -31,7 +35,9 @@
     "sceneId": -1,
     "speaker": null,
     "dialogue": "But first... What is your name...?",
-    "display": "scene1_fg_3",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -45,7 +51,9 @@
     "sceneId": 0,
     "speaker": null,
     "dialogue": "What a... lovely name...",
-    "display": "scene1_fg_4",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -59,7 +67,9 @@
     "sceneId": 1,
     "speaker": "Clair",
     "dialogue": "Hi there! {player.name}!",
-    "display": "scene1",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -73,7 +83,9 @@
     "sceneId": 2,
     "speaker": null,
     "dialogue": "Clair Approaches You",
-    "display": "scene2",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -87,7 +99,9 @@
     "sceneId": 3,
     "speaker": "Clair",
     "dialogue": "Want to grab lunch, {player.name}?",
-    "display": "scene2",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -113,21 +127,27 @@
     "sceneId": 4,
     "speaker": "Clair",
     "dialogue": "Take your time. I'll be around if you change your mind.",
-    "display": "scene2",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [{"description": "final"}]
   },
   {
     "sceneId": 5,
     "speaker": "Clair",
     "dialogue": "Ha, figures. Don't work too hard, {player.name}.",
-    "display": "scene2",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [{"description": "final"}]
   },
   {
     "sceneId": 6,
     "speaker": "Clair",
     "dialogue": "Great! I know a place just around the corner.",
-    "display": "scene2",
+    "bg": null,
+    "char1": null,
+    "char2": null,
     "choices": [{"description": "final"}]
   }
 ]

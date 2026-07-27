@@ -50,7 +50,7 @@
 			<button onclick={loadStart}>Restart</button>
 		</div>
 	{:else if scene}
-		<SceneDisplay display={scene.display} />
+		<SceneDisplay bg={scene.bg} char1={scene.char1} char2={scene.char2}/>
 
 		<div class="overlay">
 			{#if scene.choices.length > 1}

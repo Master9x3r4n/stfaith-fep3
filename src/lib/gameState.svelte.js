@@ -29,7 +29,9 @@
  * @property {number} sceneId
  * @property {string|null} speaker
  * @property {string} dialogue
- * @property {string} display
+ * @property {string} bg
+ * @property {string} char1
+ * @property {string} char2
  * @property {Choice[]} choices
  */
 
