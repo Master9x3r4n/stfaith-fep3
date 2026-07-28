@@ -12,7 +12,6 @@
 		width: 100%;
 		text-align: center;
 		background: var(--color-box);
-		border: none;
 		border-radius: var(--radius);
 		padding: 16px 24px;
 		font-family: var(--font-body);
@@ -22,11 +21,13 @@
 		cursor: pointer;
 		box-shadow: var(--shadow-box);
 		transition: background 0.15s ease, transform 0.15s ease;
+		border: 5px solid darksalmon;
 	}
 
 	.choice-box:hover {
 		background: var(--color-box-hover);
 		transform: translateY(-2px);
+		color: var(--color-text-soft);
 	}
 
 	.choice-box:active {

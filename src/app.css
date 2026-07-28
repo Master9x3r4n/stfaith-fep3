@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
 
 :root {
 	--color-bg: #f4ece0;
-	--color-box: #ffc773;
+	--color-box: #FFC773;
 	--color-box-deep: #f5b85c;
 	--color-box-hover: #ffd696;
 	--color-text: #2b2116;
 	--color-text-soft: #6b5c48;
 
-	--font-display: 'Fraunces', Georgia, serif;
-	--font-body: 'Nunito Sans', system-ui, sans-serif;
+	--font-display: "Roboto Slab", serif;
+	--font-body: "Playwrite NZ Basic", cursive;
 
 	--radius: 14px;
 	--shadow-box: 0 6px 18px rgba(43, 33, 22, 0.14);

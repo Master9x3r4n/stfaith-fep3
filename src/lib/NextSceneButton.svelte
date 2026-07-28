@@ -26,6 +26,7 @@
 	.next-scene-button:hover {
 		transform: translateX(3px);
 		opacity: 0.75;
+		color: crimson;
 	}
 
 	.next-scene-button:focus-visible {
