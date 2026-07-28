@@ -674,10 +674,336 @@
       {
         "choiceNumber": 3,
         "description": "I think God sent me on a mission on this world",
-        "nextSceneId": 30304,
+        "nextSceneId": 30305,
         "scoring": {
           "trust": 1
         }
+      }
+    ]
+  },
+  {
+    "sceneId": 30304,
+    "speaker": "Father Lorens",
+    "dialogue": "Well, you have come to the right place! What specifically about faith and religion do you wish to understand?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I want to know more about the meaning of faith",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 1,
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I want to learn more about your religion and God",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 1,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I'm having some doubts about my own faith",
+        "nextSceneId": 30307,
+        "scoring": {
+          "trust": -0.5,
+          "believe": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30305,
+    "speaker": "Father Lorens",
+    "dialogue": "A mission? Well, what did God ask you to do?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was tasked with discovering the meaning of faith",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 1,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Honestly, I'm not sure. It has something to do with understanding faith",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 2,
+          "believe": -0.5
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30306,
+    "speaker": "Father Lorens",
+    "dialogue": "Oh, I see. That is a question every believer asks themselves once in a while. Belief in God is very interesting, because truly, there isn't any way to truly verify if God exists. Instead, we look at the many ways that God reveals Himself to us, like through His creation and through His miracles.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30307,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30307,
+    "speaker": "Brother Byron",
+    "dialogue": "It is natural to doubt your current understanding of God, because truth is, that doubt is what allows us to seek room to further grow our connection with God. Everything in this world is born out of reason and the need to understand everything, faith is what softens it and instead reminds us that not everything can be understood and sometimes we just need to be guided through that darkness.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30308,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30308,
+    "speaker": "",
+    "dialogue": "You explain to Brother Byron and Father Lorens about how you believe God sent you to this world and the mission He gave you",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Was it really God that sent me to this mission?",
+        "nextSceneId": 30309,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I still feel very lost",
+        "nextSceneId": 30311,
+        "scoring": {
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I think I better understand now and trust in God's plans for me all the way",
+        "nextSceneId": 30312,
+        "scoring": {
+          "doing": -2,
+          "trust": 5,
+          "believe": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30309,
+    "speaker": "Father Lorens",
+    "dialogue": "To be honest, who really knows? But isn't that what faith already is? It's ironic, you were sent out on a mission to understand faith and you end up exercising it in the first place. Maybe this is mission-complete for you? But I can tell by your face that you still have some doubt that is clearly directed at the identity of God.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30310,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30310,
+    "speaker": "Father Lorens",
+    "dialogue": "I think maybe the problem is that you see religion and faith as the same. In fact, let's forget that there is a connection between them. You still went out to do what you were told to do, that is faith. You were given a purpose and you believed in it. The thing you are questioning is the existence of God, and the culture of belief around him, that culture is religion. It is our belief in the Word of God that forms religion, don't you see? Faith is our inner choice to connect with God, Religion is just our way of doing it.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30311,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30311,
+    "speaker": "Father Lorens",
+    "dialogue": "So you are already full of faith in God, because you chose to come here and ask about Him. Even if you still have doubts about the religion, I believe that you already understand your own purpose. Religion is just your decision to devote yourself to God's existence, but actually following what you believe God is telling you to do in your heart and not just your mind, that is faith.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Wow, that was very insightful. Thank you.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "trust": 2,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "So I should just dedicate my entire faith into entrusting myself unto God?",
+        "nextSceneId": 30312,
+        "scoring": {
+          "doing": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "But if God doesn't really exist, would it really matter?",
+        "nextSceneId": 30313,
+        "scoring": {
+          "trust": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30312,
+    "speaker": "Brother Byron",
+    "dialogue": "Not completely. Faith is not just about pure trust in God, it's also about choosing to act out it and what you believe. And another important aspect is your worship and belief in God. While your belief does appear to be your weaker spot, you are still in the process of exploring your own faith and that is fine.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I think I better understand it now. Faith isn't just about blind trust.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "trust": 1,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "But what if God wasn't the one who sent me, what would it mean for me?",
+        "nextSceneId": 30313,
+        "scoring": {
+          "trust": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30313,
+    "speaker": "Brother Byron",
+    "dialogue": "Well, maybe the question you should be asking yourself is if you do what you do because you believed God was real, because it felt right, or because you knew deep down it had to be something special?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I heard about God, so I believe that He had to be real and was the one who did this for me",
+        "nextSceneId": 30314,
+        "scoring": {
+          "believe": 4
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "It had to be something special. I just put my faith in the one who sent me.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "trust": 4
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "It just felt like the right thing to do deep down. I never expected it to be this meaningful.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "doing": 4
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30314,
+    "speaker": "Father Lorens",
+    "dialogue": "I'm glad to hear that. But, I think we both know your journey doesn't end here yet. There are many more ways that you can exercise your faith through doing what is right, and further refining your belief in God. But that decision is up to you.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I wish to further express my faith in what I do.",
+        "nextSceneId": 30315,
+        "scoring": {
+          "doing": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I wish to further express my faith by understanding more about God",
+        "nextSceneId": 30315,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I think I still need more info before I come into a conclusion",
+        "nextSceneId": 30315,
+        "scoring": {
+          "trust": -2,
+          "believe": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30315,
+    "speaker": "Father Lorens",
+    "dialogue": "Good to know you have made up your mind. Unfortunately, Brother Byron and I have something important to attend to, but you are still welcome to stay around if you want. It was nice meeting you {player.name}, I hope to see you at the festival tonight.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30316,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30316,
+    "speaker": "Brother Byron",
+    "dialogue": "See you! It was nice meeting you.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30999,
+        "scoring": null
       }
     ]
   },
