@@ -19,9 +19,9 @@
     "sceneId": -2,
     "speaker": null,
     "dialogue": "We shall test your interaction skills through scenes...",
-    "bg": null,
-    "char1": null,
-    "char2": null,
+    "bg": "bg",
+    "char1": "paimon",
+    "char2": "yoda",
     "choices": [
       {
         "choiceNumber": 1,
@@ -35,9 +35,9 @@
     "sceneId": -1,
     "speaker": null,
     "dialogue": "But first... What is your name...?",
-    "bg": null,
-    "char1": null,
-    "char2": null,
+    "bg": "bg",
+    "char1": "paimon",
+    "char2": "yoda",
     "choices": [
       {
         "choiceNumber": 1,

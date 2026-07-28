@@ -28,15 +28,17 @@
 
 	.speaker-tab {
 		position: absolute;
-		top: -34px;
+		top: -45px;
 		left: 24px;
-		background: var(--color-box);
-		color: var(--color-text);
+		background: #9A819A;
+		color: #FDF6E3;
 		font-family: var(--font-body);
 		font-weight: 700;
 		font-size: 1rem;
 		padding: 8px 20px;
 		border-radius: var(--radius) var(--radius) 0 0;
+		border: 3px solid rgb(246, 133, 96);
+		border-bottom-style: none;
 	}
 
 	.dialog-box {
@@ -49,6 +51,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 10px;
+		border: 5px solid darksalmon;
 	}
 
 	.dialog-box.no-speaker {
