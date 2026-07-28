@@ -130,7 +130,12 @@
     "bg": null,
     "char1": null,
     "char2": null,
-    "choices": [{"description": "final"}]
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 7,
+        "scoring": null
+      }]
   },
   {
     "sceneId": 5,
@@ -139,12 +144,109 @@
     "bg": null,
     "char1": null,
     "char2": null,
-    "choices": [{"description": "final"}]
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 7,
+        "scoring": null
+      }]
   },
   {
     "sceneId": 6,
     "speaker": "Clair",
     "dialogue": "Great! I know a place just around the corner.",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 7,
+        "scoring": null
+      }]
+  },
+  {
+    "sceneId": 7,
+    "speaker": null,
+    "dialogue": "...",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "scoring": null,
+        "routes": [
+          { "category": "integral", "nextSceneId": 8 },
+          { "category": "leaning", "nextSceneId": 10 },
+          { "category": "extreme", "nextSceneId": 12 }
+        ]
+      }]
+  },
+  {
+    "sceneId": 8,
+    "speaker": null,
+    "dialogue": "Interesting...",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 9,
+        "scoring": null
+      }]
+  },
+  {
+    "sceneId": 9,
+    "speaker": null,
+    "dialogue": "You have... total... integral faith...",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{"description": "final"}]
+  },
+  {
+    "sceneId": 10,
+    "speaker": null,
+    "dialogue": "Very... very... interesting...",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 11,
+        "scoring": null
+      }]
+  },
+  {
+    "sceneId": 11,
+    "speaker": null,
+    "dialogue": "It seems... you are leaning towards {gameState.ending}...",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{"description": "final"}]
+  },
+  {
+    "sceneId": 12,
+    "speaker": null,
+    "dialogue": "Heretic...",
+    "bg": null,
+    "char1": null,
+    "char2": null,
+    "choices": [{
+        "choiceNumber": 1,
+        "description": "Continue",
+        "nextSceneId": 12,
+        "scoring": null
+      }]
+  },
+  {
+    "sceneId": 13,
+    "speaker": null,
+    "dialogue": "You are an extremist towards {gameState.ending}...",
     "bg": null,
     "char1": null,
     "char2": null,
