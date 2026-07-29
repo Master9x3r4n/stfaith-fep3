@@ -1,0 +1,2332 @@
+[
+  {
+    "sceneId": 1,
+    "speaker": "???",
+    "dialogue": "Greetings...",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 2,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 2,
+    "speaker": "???",
+    "dialogue": "You are finally awake!",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Who are you?",
+        "nextSceneId": 3,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "What is going on?",
+        "nextSceneId": 3,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Where am I?",
+        "nextSceneId": 3,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 3,
+    "speaker": "???",
+    "dialogue": "Oh, you probably have so many questions. But trust me, the only thing important here is what you decide to do and the choices you are going to make.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4,
+    "speaker": "???",
+    "dialogue": "I can't tell you much right now. All I can say is that you have a very special purpose in this world. It is up to you to find out what that is and what you choose to do with that information.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 5,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 5,
+    "speaker": "???",
+    "dialogue": "I am going to put you through a simulation of what you could possibly live your life like. Your goal is to simply find out what is the meaning of this concept called: faith.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 7,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 7,
+    "speaker": "???",
+    "dialogue": "Faith is a very interesting concept. And you might find yourself facing challenges about that. But don't worry, remember that this is all just a simulation and what's important is the destination at the end.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 8,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 8,
+    "speaker": "???",
+    "dialogue": "Well that's it for me. I am going to send you in now. Always remember that when you make a choice, make one that you won't regret. Are you ready?",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Yes, but I have a something to ask",
+        "nextSceneId": 9,
+        "scoring": {
+          "trust": 0.5
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Wait, I still don't know who you are!",
+        "nextSceneId": 9,
+        "scoring": {
+          "believe": 0.5
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I still don't understand what is going on.",
+        "nextSceneId": 9,
+        "scoring": {
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 9,
+    "speaker": "???",
+    "dialogue": "Don't worry, everything will make sense in the end. See you on the other side!",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 10,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 10,
+    "speaker": "",
+    "dialogue": "In the blink of an eye, you suddenly wake up in the middle of nowhere. You look around at the scenery on what appears to be a farm.",
+    "bg": "farm",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Where am I?",
+        "nextSceneId": 11,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Woah, I love farms!",
+        "nextSceneId": 11,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 11,
+    "speaker": "???",
+    "dialogue": "Why hello there stranger!",
+    "bg": "farm",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 12,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 12,
+    "speaker": "Clair",
+    "dialogue": "I wasn't expecting visitors today. My name is Clair, and I'm the owner of this farm. Say, what is your name?",
+    "bg": "farm",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Text",
+        "nextSceneId": 13,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 13,
+    "speaker": "Clair",
+    "dialogue": "Nice to meet you {player.name}! What brings you here to my lovely farm?",
+    "bg": "farm",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was just passing by and found this place.",
+        "nextSceneId": 14,
+        "scoring": {
+          "trust": -0.5
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I might have been sent here on a mission of understanding faith.",
+        "nextSceneId": 15,
+        "scoring": {
+          "believe": 0.5
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I'm not sure either. I just kind of woke up in this place.",
+        "nextSceneId": 15,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 14,
+    "speaker": "Clair",
+    "dialogue": "Oh that's great. Since you have nothing better to do, let me show you around!",
+    "bg": "farm",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 16,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 15,
+    "speaker": "Clair",
+    "dialogue": "Wow, that sounds very interesting. In that case, let me show you around the place if you don't mind.",
+    "bg": "farm",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 16,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 16,
+    "speaker": "Clair",
+    "dialogue": "So this place over here is my farm. I mostly work here with my friend Elaina. We provide fresh produce for the town with the crops we grow here. We mostly work during the whole week except for Sundays, which we spend the time going to the church.",
+    "bg": "farm",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "next",
+        "nextSceneId": 17,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 17,
+    "speaker": "Clair",
+    "dialogue": "We also live in the house over there in the distance near our farm. It's a very cozy life even though the work can become a lot. Say that reminds me, you should come to the festival tonight in town!",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "A festival? That sounds fun!",
+        "nextSceneId": 18,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I don't know, I still don't know anyone around here..",
+        "nextSceneId": 19,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 18,
+    "speaker": "Clair",
+    "dialogue": "I hope to see you there. There are also lots of cool people to meet there, so I hope you enjoy it!",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I can't wait!",
+        "nextSceneId": 20,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I hope to meet new people!",
+        "nextSceneId": 20,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 19,
+    "speaker": "Clair",
+    "dialogue": "That's alright. Since you are new here, I think you should take the opportunity to make new friends before the festival.",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Sounds like a plan!",
+        "nextSceneId": 20,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I'm still a little skeptical but sure thing.",
+        "nextSceneId": 20,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 20,
+    "speaker": "Clair",
+    "dialogue": "Great! Now I guess that wraps up our tour. Do you have any questions?",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I actually have a question about faith?",
+        "nextSceneId": 21,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Do you know what religion is?",
+        "nextSceneId": 21,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I want to understand more about religion and faith",
+        "nextSceneId": 21,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 21,
+    "speaker": "Clair",
+    "dialogue": "Interesting question.",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 22,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 22,
+    "speaker": "Clair",
+    "dialogue": "To me faith and religion are two different concepts that intertwine with each other. Religion is basically what we believe in that is engraved in our culture. Its normally rooted in tradition and belief in God or some other deity",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 23,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 23,
+    "speaker": "Clair",
+    "dialogue": "Faith on the other hand, I guess that's just the way we put our trust into others. But it's not the kind of trust you have fully built up, sometimes it involves following a hunch. Just like how I put my faith that you would be a nice neighbor even though I have never met you.",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 24,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 24,
+    "speaker": "Clair",
+    "dialogue": "Everyone has their own set of beliefs, and within that they also have their own levels of faith. Personally, I'm a believer in God and that He created all of us with a divine purpose in mind. Does that make sense?",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I think I get what you mean",
+        "nextSceneId": 25,
+        "scoring": {
+          "believe": 1,
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I'm still a little skeptical. But I see what you mean",
+        "nextSceneId": 26,
+        "scoring": {
+          "believe": 1,
+          "trust": -1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I was sent here by a mysterious being, could that have been God?",
+        "nextSceneId": 27,
+        "scoring": {
+          "believe": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 25,
+    "speaker": "Clair",
+    "dialogue": "That's good to hear. You know, you should pass by the church if you are curious. Maybe Father Lorens can help you out.",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 28,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 26,
+    "speaker": "Clair",
+    "dialogue": "That's fair. There's nothing wrong with being skeptical, in fact, it might help you build your faith! You know, you should consider visiting the church if you want to learn more. Maybe Father Lorens can explain it better than me.",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Sure thing, I'd love to understand my religion better.",
+        "nextSceneId": 28,
+        "scoring": {
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I'll think about it. I might want to explore first.",
+        "nextSceneId": 28,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 27,
+    "speaker": "Clair",
+    "dialogue": "A mysterious being? Maybe God sent you here so I could be your friend! Haha. Kidding. But if you really want to know, you should visit Father Lorens at the church. Maybe he can help you.",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I'll check it out, I really want to understand my purpose.",
+        "nextSceneId": 28,
+        "scoring": {
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Thanks for the output, I will consider it!",
+        "nextSceneId": 28,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 28,
+    "speaker": "Clair",
+    "dialogue": "Anyway, I still got work to do around the farm before the festival tonight. I hope to see you there! Nice meeting you {player.name}",
+    "bg": "field",
+    "char1": "clair",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "See you there!",
+        "nextSceneId": 29,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Thank you!",
+        "nextSceneId": 29,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 29,
+    "speaker": "",
+    "dialogue": "You leave the farm and head off towards the direction of the town. You learned a little more about your purpose, but you still have lots of questions. Such as, was the mysterious deity who sent you here God? Do we really have to fulfill what He said? And if not, what is our purpose then?",
+    "bg": "field",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30,
+    "speaker": "",
+    "dialogue": "You arrive at a fork in the road that leads in two different directions. One leads to the church that Clair was talking about, and the other to the park. If we visit the church, we might have the opportunity to learn more about what faith is. If we visit the park, we might be able to fulfill a bigger purpose.",
+    "bg": "intersection",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Let's head to the church so we can investigate further on the meaning of faith",
+        "nextSceneId": 30300,
+        "scoring": {
+          "trust": 1,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Let's head to the park and hopefully we can understand what faith is another way",
+        "nextSceneId": 30400,
+        "scoring": {
+          "trust": 1,
+          "doing": 4
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30300,
+    "speaker": "",
+    "dialogue": "After a few minutes of walking, you arrive at the church. The place looks very old yet grand. It also feels peaceful here.",
+    "bg": "church1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30301,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30301,
+    "speaker": "???",
+    "dialogue": "Greetings friend. I heard there was a new neighbor in town.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30302,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30302,
+    "speaker": "Father Lorens",
+    "dialogue": "My name is Father Lorens and this is Brother Byron. What is your name?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30303,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30303,
+    "speaker": "Brother Byron",
+    "dialogue": "Hello {player.name}, it is very nice to meet you. What brings you here to the church? Is there anything we can help you with?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was hoping to learn more about religion",
+        "nextSceneId": 30304,
+        "scoring": {
+          "doing": 1.5
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I want to learn more about the meaning of faith",
+        "nextSceneId": 30304,
+        "scoring": {
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I think God sent me on a mission on this world",
+        "nextSceneId": 30305,
+        "scoring": {
+          "trust": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30304,
+    "speaker": "Father Lorens",
+    "dialogue": "Well, you have come to the right place! What specifically about faith and religion do you wish to understand?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I want to know more about the meaning of faith",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 1.5,
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I want to learn more about your religion and God",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 1.5,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I'm having some doubts about my own faith",
+        "nextSceneId": 30307,
+        "scoring": {
+          "trust": -0.5,
+          "believe": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30305,
+    "speaker": "Father Lorens",
+    "dialogue": "A mission? Well, what did God ask you to do?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was tasked with discovering the meaning of faith",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 1.5,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Honestly, I'm not sure. It has something to do with understanding faith",
+        "nextSceneId": 30306,
+        "scoring": {
+          "doing": 2.5,
+          "believe": -0.5
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30306,
+    "speaker": "Father Lorens",
+    "dialogue": "Oh, I see. That is a question every believer asks themselves once in a while. Belief in God is very interesting, because truly, there isn't any way to truly verify if God exists. Instead, we look at the many ways that God reveals Himself to us, like through His creation and through His miracles.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30307,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30307,
+    "speaker": "Brother Byron",
+    "dialogue": "It is natural to doubt your current understanding of God, because truth is, that doubt is what allows us to seek room to further grow our connection with God. Everything in this world is born out of reason and the need to understand everything, faith is what softens it and instead reminds us that not everything can be understood and sometimes we just need to be guided through that darkness.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30308,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30308,
+    "speaker": "",
+    "dialogue": "You explain to Brother Byron and Father Lorens about how you believe God sent you to this world and the mission He gave you",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Was it really God that sent me to this mission?",
+        "nextSceneId": 30309,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I still feel very lost",
+        "nextSceneId": 30311,
+        "scoring": {
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I think I better understand now and trust in God's plans for me all the way",
+        "nextSceneId": 30312,
+        "scoring": {
+          "doing": -2,
+          "trust": 5,
+          "believe": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30309,
+    "speaker": "Father Lorens",
+    "dialogue": "To be honest, who really knows? But isn't that what faith already is? It's ironic, you were sent out on a mission to understand faith and you end up exercising it in the first place. Maybe this is mission-complete for you? But I can tell by your face that you still have some doubt that is clearly directed at the identity of God.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30310,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30310,
+    "speaker": "Father Lorens",
+    "dialogue": "I think maybe the problem is that you see religion and faith as the same. In fact, let's forget that there is a connection between them. You still went out to do what you were told to do, that is faith. You were given a purpose and you believed in it. The thing you are questioning is the existence of God, and the culture of belief around him, that culture is religion. It is our belief in the Word of God that forms religion, don't you see? Faith is our inner choice to connect with God, Religion is just our way of doing it.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30311,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30311,
+    "speaker": "Father Lorens",
+    "dialogue": "So you are already full of faith in God, because you chose to come here and ask about Him. Even if you still have doubts about the religion, I believe that you already understand your own purpose. Religion is just your decision to devote yourself to God's existence, but actually following what you believe God is telling you to do in your heart and not just your mind, that is faith.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Wow, that was very insightful. Thank you.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "trust": 2,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "So I should just dedicate my entire faith into entrusting myself unto God?",
+        "nextSceneId": 30312,
+        "scoring": {
+          "doing": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "But if God doesn't really exist, would it really matter?",
+        "nextSceneId": 30313,
+        "scoring": {
+          "trust": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30312,
+    "speaker": "Brother Byron",
+    "dialogue": "Not completely. Faith is not just about pure trust in God, it's also about choosing to act out on what you believe. And another important aspect is your worship and belief in God. While your belief does appear to be your weaker spot, you are still in the process of exploring your own faith and that is fine.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I think I better understand it now. Faith isn't just about blind trust.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "trust": 1,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "But what if God wasn't the one who sent me, what would it mean for me?",
+        "nextSceneId": 30313,
+        "scoring": {
+          "trust": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30313,
+    "speaker": "Brother Byron",
+    "dialogue": "Well, maybe the question you should be asking yourself is if you do what you do because you believed God was real, because it felt right, or because you knew deep down it had to be something special?",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I heard about God, so I believe that He had to be real and was the one who did this for me",
+        "nextSceneId": 30314,
+        "scoring": {
+          "believe": 4
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "It had to be something special. I just put my faith in the one who sent me.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "trust": 4
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "It just felt like the right thing to do deep down. I never expected it to be this meaningful.",
+        "nextSceneId": 30314,
+        "scoring": {
+          "doing": 4
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30314,
+    "speaker": "Father Lorens",
+    "dialogue": "I'm glad to hear that. But, I think we both know your journey doesn't end here yet. There are many more ways that you can exercise your faith through doing what is right, and further refining your belief in God. But that decision is up to you.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I wish to further express my faith in what I do.",
+        "nextSceneId": 30315,
+        "scoring": {
+          "doing": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I wish to further express my faith by understanding more about God",
+        "nextSceneId": 30315,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I think I still need more info before I come into a conclusion",
+        "nextSceneId": 30315,
+        "scoring": {
+          "trust": -2,
+          "believe": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30315,
+    "speaker": "Father Lorens",
+    "dialogue": "Good to know you have made up your mind. Unfortunately, Brother Byron and I have something important to attend to, but you are still welcome to stay around if you want. It was nice meeting you {player.name}, I hope to see you at the festival tonight.",
+    "bg": "church1",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30316,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30316,
+    "speaker": "Brother Byron",
+    "dialogue": "See you! It was nice meeting you.",
+    "bg": "church1",
+    "char1": null,
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4201,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30400,
+    "speaker": "",
+    "dialogue": "After a few minutes of walking, you arrive at the park. The place looks very nice and green. It also feels peaceful here.",
+    "bg": "park1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30401,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30401,
+    "speaker": "???",
+    "dialogue": "Hey! We gotta get this cleaned up before the end of the day or we will never finish it for the festival in time!",
+    "bg": "park1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30402,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30402,
+    "speaker": "Carlo",
+    "dialogue": "Ughhh, how many times do I have to tell you Meero, if you stop worrying and focus more on finishing the task we will be done as soon as possible!",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30403,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30403,
+    "speaker": "Meero",
+    "dialogue": "Yeah well it doesn't help if you are being very slow Carlo. Well, I'm also kind of slow. But at this rate we will never get it done! But noooo, I am the one to be blamed for worryi- Oh, Hi! I didn't see you there, stranger. What's your name?",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30404,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30404,
+    "speaker": "Meero",
+    "dialogue": "Nice to meet you {player.name}. My name is Meero, and this guy over here is my buddy Carlo. He's a little on the grumpy side today because the park has been a little messy and we gotta get ready for the festival tonight! What brings you here anyway?",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was sent on a mission by God to learn about faith",
+        "nextSceneId": 30405,
+        "scoring": {
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Would you guys mind sharing what you know about faith and religion",
+        "nextSceneId": 30405,
+        "scoring": {
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I've been having some doubts about my own faith and purpose in life",
+        "nextSceneId": 30405,
+        "scoring": {
+          "believe": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30405,
+    "speaker": "Meero",
+    "dialogue": "Oh, well um I should probably first mention that I likely have a different religion from you. And Carlo over there is actually an atheist; he doesn't believe in any form of god. So sorry we can't be of help, but maybe you can perhaps help us clean the park. And maybe we could still have a meaningful discussion?",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Sure, I would love to help you guys out!",
+        "nextSceneId": 30406,
+        "scoring": {
+          "doing": 5
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I think I will pass, I have a mission to do.",
+        "nextSceneId": 31406,
+        "scoring": {
+          "doing": -2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30406,
+    "speaker": "Meero",
+    "dialogue": "That's fantastic! Here, you can take this rake and we can start cleaning the leaves together over in that area. We really appreciate your help.",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30407,
+    "speaker": "",
+    "dialogue": "You start sweeping the area with Carlo and Meero. Meanwhile, you tell them about how you believe God sent you.",
+    "bg": "park2",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I really believe that God sent me for a reason",
+        "nextSceneId": 30408,
+        "scoring": {
+          "believe": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I'm still unsure of what faith is and why I have to seek its meaning",
+        "nextSceneId": 30408,
+        "scoring": {
+          "believe": 1,
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 31406,
+    "speaker": "Carlo",
+    "dialogue": "That's fine. Meero and I can handle the cleaning from here. But you are welcome to chat with us while we clean up",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 31407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 31407,
+    "speaker": "",
+    "dialogue": "Meero and Carlo get to work and start cleaning the park. Meanwhile, you tell them about how you believe God sent you.",
+    "bg": "park2",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I really believe that God sent me for a reason",
+        "nextSceneId": 30408,
+        "scoring": {
+          "believe": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I'm still unsure of what faith is and why I have to seek its meaning",
+        "nextSceneId": 30408,
+        "scoring": {
+          "believe": 1,
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30408,
+    "speaker": "Meero",
+    "dialogue": "Wow, that sounds so interesting. I wish I could help you, but I don't really know much about your god. And, well, Carlo obviously can't help either unfortunately.",
+    "bg": "park2",
+    "char1": null,
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I'm curious to learn how you two became friends despite your differences. Especially with Carlo being an atheist.",
+        "nextSceneId": 30409,
+        "scoring": {
+          "believe": 2,
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "How about you guys? You seem to be good friends despite your stark beliefs. Especially with Meero being the religious one.",
+        "nextSceneId": 30409,
+        "scoring": {
+          "believe": 1,
+          "trust": 2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30409,
+    "speaker": "Carlo",
+    "dialogue": "You know, we get that question a lot. Most of the time we just say: oh yeah it's because we are still both human beings and we should just let our differences slide and yada yada yada. But honestly speaking, it kind of gets deeper than that. I think we became close because of what made us different.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30410,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30410,
+    "speaker": "Carlo",
+    "dialogue": "I was born to a religious family, actually. But, I never really connected with the practices that they did. Growing up, I didn't really believe that a god of some kind existed, there was lots of contradictory logic here and there, but, the thing that annoyed me the most was how many people would fall under the ritualism aspect. People would overly devote themselves to their religion and they would lose sight of basic things like human love and kindness. I hated it, and it became apparent that no miracles would save the day.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It feels wrong to give up on a belief just because of that.",
+        "nextSceneId": 30411,
+        "scoring": {
+          "trust": 4,
+          "believe": -6
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "You're right. Blind belief can completely destroy you.",
+        "nextSceneId": 30411,
+        "scoring": {
+          "believe": -5
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I understand how you feel",
+        "nextSceneId": 30411,
+        "scoring": {
+          "believe": 2,
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30411,
+    "speaker": "Meero",
+    "dialogue": "Me on the other hand, my religion is about how we as humans must live a life full of zen and kindness. Good acts, self control, and patience, which I will not talk about mine, are aspects in my religion but inner peace and meditation are the most important ones. I've always been a strong believer in my religion, but like clearly, I've never been the kind to practice those values. And that doesn't mean that I never tried to, it's just that, I've never pushed myself over that hill, because I didn't feel like I was ready yet.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Isn't it hypocritical to believe in something and not actually do it",
+        "nextSceneId": 30412,
+        "scoring": {
+          "trust": -5,
+          "believe": 5
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Maybe there is a chance that the answer to my faith lies with your religion",
+        "nextSceneId": 30412,
+        "scoring": {
+          "trust": 5,
+          "believe": -5
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Maybe faith has something to do with also knowing when you are ready to commit to something big",
+        "nextSceneId": 30412,
+        "scoring": {
+          "trust": 2,
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30412,
+    "speaker": "Meero",
+    "dialogue": "Fast forward to a few years, Carlo and I would meet each other in college. We were in the same section in one of our faith classes and we had this thing where we had to talk about each others' faith and beliefs. And as you would expect, me and Carlo would have friction over that. But we were also kind of forced to work with each other.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30413,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30413,
+    "speaker": "Carlo",
+    "dialogue": "While yes, we tried to look past each others' differences and focus on what makes us similar, but, when you think about it, it was our initial disdain for each other that would force us to look that way in the first place. Meero was the type of religious person I wouldn't like, the super devoted person in belief who lacked in action, but Meero was aware of himself for that. And he was humble about it, he understood that deep down his version of his faith didn't feel right even though he was still a strong believer in his religion.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30414,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30414,
+    "speaker": "Meero",
+    "dialogue": "And for me, it was how much his journey made sense to me. I understood how he got to the point where he gave up on his religion, and it kind of resonated with me. In a way, it pushed me to understand the importance of making sure my faith wasn't just a one dimensional belief system. I still have a long way to go before I achieve total integral faith, but Carlo in a way helped set me on that path.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I think I understand it now, faith is not just about believing, but it is also about doing and entrusting.",
+        "nextSceneId": 30416,
+        "scoring": {
+          "doing": 2.5,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I think I get it, faith can also help us inspire others to do good, even if we have different beliefs.",
+        "nextSceneId": 30416,
+        "scoring": {
+          "doing": 2.5,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I don't know. It kinda sounds to me like you guys became closer through other means.",
+        "nextSceneId": 30415,
+        "scoring": {
+          "trust": -2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30415,
+    "speaker": "Carlo",
+    "dialogue": "I guess we also still did become closer because of our other common interests. But I think the point is that our differences don't always have to make us work against each other.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30416,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30416,
+    "speaker": "Meero",
+    "dialogue": "You know, after having that talk, I think I can help you answer your question about faith. Maybe faith is the light that guides you, even if the direction it is going to seems uncertain, choosing to trust it is what helps make up faith. And your belief in it is what makes it special.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I don't know, I still feel skeptical about it",
+        "nextSceneId": 30417,
+        "scoring": {
+          "believe": 2,
+          "trust": -1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I think that really helps me a lot.",
+        "nextSceneId": 30418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30417,
+    "speaker": "Carlo",
+    "dialogue": "I've seen lots of religious dogmatism back then, but, to be honest, you seem very different. I think it's the fact that you still decided to be curious and understand who gave you this job and why is a part of actually understanding what faith is. I think all that's left is for you to believe it, and that decision is up to you.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30418,
+    "speaker": "Meero",
+    "dialogue": "And hey, will you look at that! We finished cleaning, well it was nice chatting with you. I hope our little convo could have at least helped a bit. See you at the festival tonight!",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Nice meeting you guys!",
+        "nextSceneId": 30419,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Thanks for the insights!",
+        "nextSceneId": 30419,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30419,
+    "speaker": "",
+    "dialogue": "You spend a few hours in the park and reflect on what you have learned. I think we can safely say that...",
+    "bg": "park1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I need to continue to do the will of God who sent me, and I can achieve integral faith",
+        "nextSceneId": 30420,
+        "scoring": {
+          "doing": 4
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I need to put my trust in God's will for me even if I am uncertain",
+        "nextSceneId": 30420,
+        "scoring": {
+          "trust": 4
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "There are still many details that are unclear",
+        "nextSceneId": 30420,
+        "scoring": {
+          "believe": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30420,
+    "speaker": "",
+    "dialogue": "During the festival I decided that I am going to...",
+    "bg": "park1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Continue to find ways to express my newfound understanding of faith",
+        "nextSceneId": 4101,
+        "scoring": {
+          "doing": 1.5,
+          "trust": 1,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Continue to keep seeking answer on what faith could be",
+        "nextSceneId": 4101,
+        "scoring": {
+          "trust": -1,
+          "doing": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Move away from my mission and seek new answers",
+        "nextSceneId": 4101,
+        "scoring": {
+          "believe": -1,
+          "trust": -2,
+          "doing": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4101,
+    "speaker": "",
+    "dialogue": "It is now time for the festival! As you go around the stalls you catch up with some familiar faces",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4102,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4102,
+    "speaker": "Carlo",
+    "dialogue": "Hey there {player.name}! It is so good to see you again here! Have you been enjoying it so far?",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It's been great!",
+        "nextSceneId": 4103,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Hey! It's nice seeing you guys again!",
+        "nextSceneId": 4103,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4103,
+    "speaker": "Meero",
+    "dialogue": "Nice seeing you here. Carlo and I have been exploring the different stalls. How about you, how did your faith journey go? ",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It went well, I think I understand faith better now",
+        "nextSceneId": 4104,
+        "scoring": {
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I don't think I was able to find what I wanted about faith",
+        "nextSceneId": 4107,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4104,
+    "speaker": "Carlo",
+    "dialogue": "Oh? What did you learn?",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Faith helps us understand what makes life truly meaningful and challenges us to find that purpose",
+        "nextSceneId": 4105,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Faith helps us define and connect God and seek to understand Him better so we can put our full trust in His blessings for us.",
+        "nextSceneId": 4105,
+        "scoring": {
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith encourages us to listen to God's will and empowers us to also help others find the light in Him",
+        "nextSceneId": 4105,
+        "scoring": {
+          "doing": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4105,
+    "speaker": "Meero",
+    "dialogue": "That is very nice to hear!",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I also learned from you two about the value of respect for each others' beliefs. Even if we may have a different perspective on things",
+        "nextSceneId": 4106,
+        "scoring": {
+          "doing": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I also learned that faith isn't something we must always follow blindly, there are dimensions to faith that we must learn to properly value",
+        "nextSceneId": 4106,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I also learned that valuing my faith is also my own way of creating a connection with God",
+        "nextSceneId": 4106,
+        "scoring": {
+          "trust": 2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4106,
+    "speaker": "Meero",
+    "dialogue": "I am glad you were able to find what you were looking for.",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4108,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4107,
+    "speaker": "Carlo",
+    "dialogue": "That's unfortunate. But I guess you can now enjoy the festival with us.",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4108,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4108,
+    "speaker": "",
+    "dialogue": "You then go on to celebrate the festival with Carlo and Meero for the next 30 minutes. You also remember that Clair is in the festival so you decide to go look for her",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 401,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4201,
+    "speaker": "",
+    "dialogue": "It is now time for the festival! As you go around the stalls you catch up with some familiar faces",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4202,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4202,
+    "speaker": "Father Lorens",
+    "dialogue": "Hello, {player.name}! It is nice seeing you here. How are you?",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It's been great!",
+        "nextSceneId": 4203,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Hello! It's nice seeing you two.",
+        "nextSceneId": 4203,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4203,
+    "speaker": "Brother Byron",
+    "dialogue": "It's a pleasure seeing you here. Father Lorens and I were just exploring the stalls. How about you, has your faith journey led you to somewhere interesting?",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It went well, I think I understand faith better now",
+        "nextSceneId": 4204,
+        "scoring": {
+          "trust": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I don't think I was able to find what I wanted about faith",
+        "nextSceneId": 4207,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4204,
+    "speaker": "Father Lorens",
+    "dialogue": "Oh? What did you learn?",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Faith helps us understand what makes life truly meaningful and challenges us to find that purpose",
+        "nextSceneId": 4205,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Faith helps us define and connect God and seek to understand Him better so we can put our full trust in His blessings for us.",
+        "nextSceneId": 4205,
+        "scoring": {
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith encourages us to listen to God's will and empowers us to also help others find the light in Him",
+        "nextSceneId": 4205,
+        "scoring": {
+          "doing": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4205,
+    "speaker": "Brother Byron",
+    "dialogue": "That is very nice to hear!",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I also learned from you two that my own journey to discover the meaning of faith has let me allow faith to transform me as a person. The meaning of faith wasn't in the end, it was the choices I made that brought me there.",
+        "nextSceneId": 4206,
+        "scoring": {
+          "doing": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I also learned that faith as a way of life must be an integrated way of our doing, believing, and trusting in relation to God's Word",
+        "nextSceneId": 4206,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I also learned that faith can bring us closer to God if we are willing to listen to what He has to say for us.",
+        "nextSceneId": 4206,
+        "scoring": {
+          "trust": 1,
+          "doing": 2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4206,
+    "speaker": "Brother Byron",
+    "dialogue": "I am glad you were able to find what you were looking for.",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4208,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4207,
+    "speaker": "Father Lorens",
+    "dialogue": "That's unfortunate. But I guess you can now enjoy the festival with us.",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4208,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4208,
+    "speaker": "",
+    "dialogue": "You then go on to celebrate the festival with Father Lorens and Brother Byron for the next 30 minutes. You also remember that Clair is in the festival so you decide to go look for her",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 401,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 401,
+    "speaker": "",
+    "dialogue": "While searching you stumble upon a new friend",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 402,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 402,
+    "speaker": "Elaina",
+    "dialogue": "Hiiiiii! You must be {player.name}, it's so nice to finally meet you!",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 403,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 403,
+    "speaker": "Elaina",
+    "dialogue": "Clair told me all about you,she should be here soon. I heard all about your mission of faith. Did you find what you were looking for?",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Yes, I think I did",
+        "nextSceneId": 405,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Unfortunately, no",
+        "nextSceneId": 404,
+        "scoring": {
+          "believe": 1,
+          "trust": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 404,
+    "speaker": "Elaina",
+    "dialogue": "Oh well, that's a shame. Anyway, it looks like Clair is now here!",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 405,
+    "speaker": "Elaina",
+    "dialogue": "That's great! What did you learn?",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "The reason why I was sent to learn more about faith in the first place was so that I could be able to learn how to grow my own faith in God.",
+        "nextSceneId": 406,
+        "scoring": {
+          "believe": 4,
+          "doing": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I was sent to learn more about faith to understand its dimensions so that I many learn how to not misuse them",
+        "nextSceneId": 406,
+        "scoring": {
+          "doing": 4,
+          "believe": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith is how we empower ourselves to look onto God and put all our trust in Him.",
+        "nextSceneId": 406,
+        "scoring": {
+          "trust": 4
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 406,
+    "speaker": "Elaina",
+    "dialogue": "Wow, that is very nice. Clair did say you were really eager to learn about why God sent you on this journey. Hey, speaking of Clair, look! I think that is her over there!",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 407,
+    "speaker": "Clair",
+    "dialogue": "Hi Elaina! Hi {player.name}! I see you two finally met each other. It's good to see you again {player.name}, did you find what you wanted to learn about faith?",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I sure did!",
+        "nextSceneId": 409,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Unfortunately I didn't",
+        "nextSceneId": 408,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 408,
+    "speaker": "Clair",
+    "dialogue": "Oh well, I'm sorry to hear that. Maybe you just still need a little more time and searching and you will eventually find out.",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 411,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 409,
+    "speaker": "Clair",
+    "dialogue": "That is great to hear! What would you say was your biggest takeaway?",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "We must learn to properly exercise our faith as a whole, and not misuse its aspect to mistreat others and falsely lead ourselves",
+        "nextSceneId": 410,
+        "scoring": {
+          "doing": 3,
+          "trust": 2,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Faith is not just about our trust in God, it is also about our religion and our obedience to Him. We must learn to exercise all those values",
+        "nextSceneId": 410,
+        "scoring": {
+          "doing": 2,
+          "trust": 2,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith is not just important spiritually, but personally too. It gives us strength and hope when faced with uncertainty in life. But its connection to God allows us to find another source of strength.",
+        "nextSceneId": 410,
+        "scoring": {
+          "doing": 2,
+          "trust": 2,
+          "believe": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 410,
+    "speaker": "Clair",
+    "dialogue": "Wow! You really did learn a whole lot about faith! I'm glad your journey went well for you.",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I couldn't have done it without the friends I made along the way",
+        "nextSceneId": 411,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "It was thanks to everyone's wisdom that I was able to learn more about faith",
+        "nextSceneId": 411,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 411,
+    "speaker": "Elaina",
+    "dialogue": "Hey look! The main event is about to begin. Let's all go there together!",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 412,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 412,
+    "speaker": "Clair",
+    "dialogue": "Come on, {player.name}! We wouldn't want to miss this.",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 413,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 413,
+    "speaker": "",
+    "dialogue": "As you start to follow your new friends, suddenly everything around you starts to slow down...",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Wait up guys!",
+        "nextSceneId": 414,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "What is happening?",
+        "nextSceneId": 414,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 414,
+    "speaker": "???",
+    "dialogue": "Well that was an exciting journey wasn't it?",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 415,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 414,
+    "speaker": "???",
+    "dialogue": "I'm very sorry to cut you short. I just wanted to have a quick word with you. But I'm just very curious to hear if you were able to learn what faith is?",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was able to learn the value of having faith and what it is",
+        "nextSceneId": 415,
+        "scoring": {
+          "trust": 2,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I unfortunately, didn't believe in finding the answer",
+        "nextSceneId": 416,
+        "scoring": {
+          "trust": -3,
+          "believe": -3,
+          "doing": -3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I don't think I have a very concrete answer yet, but I understand it better now",
+        "nextSceneId": 417,
+        "scoring": {
+          "believe": 3,
+          "trust": 2,
+          "doing": 2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 415,
+    "speaker": "???",
+    "dialogue": "That is very good to hear. In your short journey, you were able to meet a lot of friends who were able to teach you the value of faith in one way or the other",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 416,
+    "speaker": "???",
+    "dialogue": "Well, that is a shame. But then again, it was always your choice if you wanted to go on with this journey or not. But maybe one day, you will feel like taking up the task again.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 417,
+    "speaker": "???",
+    "dialogue": "And I think that is still wonderful. I never expected you to find an answer immediately.  What is important is that you were able to understand your own faith's strengths and weaknesses. Maybe one day you will get it, but it is only through learning that you will grow to become better.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 418,
+    "speaker": "???",
+    "dialogue": "I think that is it for me. I hope you will be able to reflect upon this journey I bestowed upon you. And maybe you might find something very valuable...",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 419,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 419,
+    "speaker": "",
+    "dialogue": "Suddenly the light starts to fade away. And when you open your eyes, you find yourself back at the festival. You had a very interesting journey today, but perhaps now it is time to enjoy the festivities and ponder if you truly understand what faith is.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "final",
+        "nextSceneId": 420,
+        "scoring": null
+      }
+    ]
+  }
+]
