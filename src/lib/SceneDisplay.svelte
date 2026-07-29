@@ -42,20 +42,13 @@
 
     .character {
         position: absolute;
-        bottom: 0;
-        max-height: 85%;
-        object-fit: contain;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
         pointer-events: none;
-    }
-
-    .char-left {
-        left: 20%;
-        transform: translateX(-50%);
-    }
-
-    .char-right {
-        right: 20%;
-        transform: translateX(50%);
     }
 
     .fallback {
