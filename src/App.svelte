@@ -14,6 +14,20 @@
 
 	let scene = $derived(currentScene())
 
+	// Whether the current scene's dialogue has finished typing (or been
+	// skipped). Choices/next stay hidden until this is true, and it resets
+	// back to false every time the scene changes.
+	let dialogueDone = $state(false)
+
+	$effect(() => {
+		scene
+		dialogueDone = false
+	})
+
+	function handleDialogueComplete() {
+		dialogueDone = true
+	}
+
 	/** @param {number} choiceNumber */
 	function handleSelect(choiceNumber) {
 		const choice = scene?.choices.find((c) => c.choiceNumber === choiceNumber)
@@ -47,9 +61,9 @@
 		<SceneDisplay bg={scene.bg} char1={scene.char1} char2={scene.char2}/>
 
 		<div class="overlay">
-			{#if scene.choices.length > 1}
+			{#if dialogueDone && scene.choices.length > 1}
 				<ChoicesPanel choices={scene.choices} onSelect={handleSelect} />
-			{:else if scene.choices[0]?.description === 'Text'}
+			{:else if dialogueDone && scene.choices[0]?.description === 'Text'}
 				<TextInput onclick={handleNext}/>
 			{/if}
 	<br><br><br>
@@ -58,6 +72,7 @@
 				dialogue={scene.dialogue}
 				showNext={scene.choices.length === 1 && scene.choices[0].description != 'Text'}
 				onNext={handleNext}
+				onComplete={handleDialogueComplete}
 			/>
 		</div>
 	{/if}
