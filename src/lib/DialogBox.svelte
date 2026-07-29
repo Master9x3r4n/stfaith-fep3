@@ -88,7 +88,7 @@
 		position: absolute;
 		top: -45px;
 		left: 24px;
-		background: rgba(154, 129, 154, 0.8);
+		background: rgba(154, 129, 154, 0.9);
 		color: #FDF6E3;
 		font-family: var(--font-body);
 		font-weight: 700;

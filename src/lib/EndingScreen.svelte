@@ -18,21 +18,21 @@
             </div>
             <div>
                 {#if gameState.endingCategory === 'integral'}
-                    You have obtained <span class="ending">total integral faith.</span>
+                    You have obtained <span class="ending">total integral faith.</span><br>
                     But don't let that define your faith and take it as an opportunity to really
                     manifest total integral faith.
                 {:else if gameState.endingCategory === 'leaning'}
-                    You lean towards <span class="ending">{gameState.ending}.</span>
+                    You lean towards <span class="ending">{gameState.ending}.</span><br>
                     But don't let that define your faith and take it as an opportunity to really
                     manifest total integral faith. You are almost there!
                 {:else}
-                    You heavily lean towards <span class="ending">{gameState.ending}.</span>
+                    You heavily lean towards <span class="ending">{gameState.ending}.</span><br>
                     But don't let that define your faith and take it as an opportunity to really
                     manifest total integral faith. You have a long journey ahead of you.$bindable
                 {/if}
             </div>
         </div>
-        <button onclick={handleClick}>Restart</button>
+        <button onclick={handleClick}>Try another path</button>
     </div>
 </div>
 
@@ -53,7 +53,7 @@
 		align-items: center;
 		justify-content: center;
 		font-family: var(--font-display);
-		font-size: 1.3rem;
+		font-size: 1.7rem;
 		color: var(--color-text-soft);
 		text-align: center;
 		padding: 24px;
@@ -73,10 +73,10 @@
 
     .title {
 		font-family: "Oleo Script", system-ui;
-        margin: 1rem;
+        margin: 0.7rem;
         font-weight: 700;
         font-style: normal;
-        font-size: 3rem;
+        font-size: 4rem;
         color:snow;
         -webkit-text-fill-color: var(--color-box);
         -webkit-text-stroke: 2px var(--color-text-soft);
@@ -93,9 +93,9 @@
 		border-radius: var(--radius);
 		padding: 10px;
 		font-family: var(--font-body);
-		font-size: 1.05rem;
+		font-size: 1.75rem;
 		font-weight: 600;
-        width: 7rem;
+        width: 20rem;
         margin-top: 6rem;
     }
 

@@ -8,7 +8,7 @@
 </script>
 
 <div class="holder">
-    <div class="title">STFAITH FEP3</div>
+    <div class="title">FEP3: STFAITH</div>
     <button onclick={handleClick}>Start</button>
 </div>
 
@@ -41,9 +41,9 @@
 		border-radius: var(--radius);
 		padding: 10px;
 		font-family: var(--font-body);
-		font-size: 1.05rem;
+		font-size: 2.05rem;
 		font-weight: 600;
-        width: 7rem;
+        width: 12rem;
     }
 
     button:hover {
@@ -56,6 +56,7 @@
 		font-family: "Oleo Script", system-ui;
         font-weight: 700;
         font-style: normal;
+        font-size: 96px;
         color:snow;
         -webkit-text-fill-color: var(--color-box);
         -webkit-text-stroke: 2px var(--color-text-soft);
