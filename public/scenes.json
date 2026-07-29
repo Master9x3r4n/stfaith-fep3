@@ -1528,7 +1528,7 @@
       {
         "choiceNumber": 1,
         "description": "Continue to find ways to express my newfound understanding of faith",
-        "nextSceneId": 4201,
+        "nextSceneId": 4101,
         "scoring": {
           "doing": 1,
           "trust": 1,
@@ -1538,7 +1538,7 @@
       {
         "choiceNumber": 2,
         "description": "Continue to keep seeking answer on what faith could be",
-        "nextSceneId": 4201,
+        "nextSceneId": 4101,
         "scoring": {
           "trust": -1,
           "doing": 2
@@ -1547,7 +1547,7 @@
       {
         "choiceNumber": 3,
         "description": "Move away from my mission and seek new answers",
-        "nextSceneId": 4201,
+        "nextSceneId": 4101,
         "scoring": {
           "believe": -1,
           "trust": -2,
