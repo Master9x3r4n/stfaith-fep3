@@ -136,7 +136,7 @@
         "description": "I still don't understand what is going on.",
         "nextSceneId": 9,
         "scoring": {
-          "doing": 0.5
+          "doing": 1
         }
       }
     ]
@@ -594,7 +594,7 @@
         "nextSceneId": 30400,
         "scoring": {
           "trust": 1,
-          "doing": 3
+          "doing": 4
         }
       }
     ]
@@ -660,7 +660,7 @@
         "description": "I was hoping to learn more about religion",
         "nextSceneId": 30304,
         "scoring": {
-          "doing": 1
+          "doing": 1.5
         }
       },
       {
@@ -694,7 +694,7 @@
         "description": "I want to know more about the meaning of faith",
         "nextSceneId": 30306,
         "scoring": {
-          "doing": 1,
+          "doing": 1.5,
           "trust": 1
         }
       },
@@ -703,7 +703,7 @@
         "description": "I want to learn more about your religion and God",
         "nextSceneId": 30306,
         "scoring": {
-          "doing": 1,
+          "doing": 1.5,
           "believe": 1
         }
       },
@@ -731,7 +731,7 @@
         "description": "I was tasked with discovering the meaning of faith",
         "nextSceneId": 30306,
         "scoring": {
-          "doing": 1,
+          "doing": 1.5,
           "believe": 1
         }
       },
@@ -740,7 +740,7 @@
         "description": "Honestly, I'm not sure. It has something to do with understanding faith",
         "nextSceneId": 30306,
         "scoring": {
-          "doing": 2,
+          "doing": 2.5,
           "believe": -0.5
         }
       }
@@ -1381,7 +1381,7 @@
         "description": "I think I understand it now, faith is not just about believing, but it is also about doing and entrusting.",
         "nextSceneId": 30416,
         "scoring": {
-          "doing": 2,
+          "doing": 2.5,
           "trust": 2
         }
       },
@@ -1390,7 +1390,7 @@
         "description": "I think I get it, faith can also help us inspire others to do good, even if we have different beliefs.",
         "nextSceneId": 30416,
         "scoring": {
-          "doing": 2,
+          "doing": 2.5,
           "believe": 2
         }
       },
@@ -1530,7 +1530,7 @@
         "description": "Continue to find ways to express my newfound understanding of faith",
         "nextSceneId": 4101,
         "scoring": {
-          "doing": 1,
+          "doing": 1.5,
           "trust": 1,
           "believe": 1
         }
@@ -2244,7 +2244,7 @@
         "scoring": {
           "believe": 3,
           "trust": 2,
-          "doing": 1
+          "doing": 2
         }
       }
     ]

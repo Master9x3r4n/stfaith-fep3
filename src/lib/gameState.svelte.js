@@ -131,11 +131,11 @@ export function computeEnding() {
 	const { score, attribute } = keys.map(key => ({ score: player.score[key] - mean, attribute: key }))
 	.reduce((max, current) => (current.score > max.score ? current : max));
 
-	if (score < 1.5) {
+	if (score < 3) {
 		gameState.endingCategory = 'integral'
 		gameState.ending = `integral`
 	}
-	else if (score <= 2) {
+	else if (score <= 5) {
 		gameState.endingCategory = 'leaning'
 		gameState.ending = `${labels[attribute]}`
 	}

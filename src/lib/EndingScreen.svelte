@@ -19,10 +19,16 @@
             <div>
                 {#if gameState.endingCategory === 'integral'}
                     You have obtained <span class="ending">total integral faith.</span>
+                    But don't let that define your faith and take it as an opportunity to really
+                    manifest total integral faith.
                 {:else if gameState.endingCategory === 'leaning'}
                     You lean towards <span class="ending">{gameState.ending}.</span>
+                    But don't let that define your faith and take it as an opportunity to really
+                    manifest total integral faith. You are almost there!
                 {:else}
                     You heavily lean towards <span class="ending">{gameState.ending}.</span>
+                    But don't let that define your faith and take it as an opportunity to really
+                    manifest total integral faith. You have a long journey ahead of you.$bindable
                 {/if}
             </div>
         </div>
