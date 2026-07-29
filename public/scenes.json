@@ -1002,7 +1002,7 @@
       {
         "choiceNumber": 1,
         "description": "nxt",
-        "nextSceneId": 30999,
+        "nextSceneId": 4101,
         "scoring": null
       }
     ]
@@ -1044,7 +1044,7 @@
     "speaker": "Carlo",
     "dialogue": "Ughhh, how many times do I have to tell you Meero, if you stop worrying and focus more on finishing the task we will be done as soon as possible!",
     "bg": "park1",
-    "char1": "carlo1",
+    "char1": "carlo",
     "char2": null,
     "choices": [
       {
@@ -1060,8 +1060,8 @@
     "speaker": "Meero",
     "dialogue": "Yeah well it doesn't help if you are being very slow Carlo. Well, I'm also kind of slow. But at this rate we will never get it done! But noooo, I am the one to be blamed for worryi- Oh, Hi! I didn't see you there, stranger. What's your name?",
     "bg": "park1",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1076,8 +1076,8 @@
     "speaker": "Meero",
     "dialogue": "Nice to meet you {player.name}. My name is Meero, and this guy over here is my buddy Carlo. He's a little on the grumpy side today because the park has been a little messy and we gotta get ready for the festival tonight! What brings you here anyway?",
     "bg": "park1",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1110,8 +1110,8 @@
     "speaker": "Meero",
     "dialogue": "Oh, well um I should probably first mention that I likely have a different religion from you. And Carlo over there is actually an atheist; he doesn't believe in any form of god. So sorry we can't be of help, but maybe you can perhaps help us clean the park. And maybe we could still have a meaningful discussion?",
     "bg": "park1",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1123,10 +1123,10 @@
       },
       {
         "choiceNumber": 2,
-        "description": "I'm kind of busy unfortunately, nice meeting you guys.",
+        "description": "I think I will pass, I have a mission to do.",
         "nextSceneId": 31406,
         "scoring": {
-          "doing": -1
+          "doing": -2
         }
       }
     ]
@@ -1136,8 +1136,8 @@
     "speaker": "Meero",
     "dialogue": "That's fantastic! Here, you can take this rake and we can start cleaning the leaves together over in that area. We really appreciate your help.",
     "bg": "park1",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1176,12 +1176,47 @@
     ]
   },
   {
+    "sceneId": 31406,
+    "speaker": "Carlo",
+    "dialogue": "That's fine. Meero and I can handle the cleaning from here. But you are welcome to chat with us while we clean up",
+    "bg": "park1",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 31407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 31407,
+    "speaker": "",
+    "dialogue": "Meero and Carlo get to work and start cleaning the park. Meanwhile, you tell them about how you believe God sent you.",
+    "bg": "\"I really believe that God sent me for a reason\": 30408 (b=2",
+    "char1": "t=3)",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I'm still unsure of what faith is and why I have to seek its meaning",
+        "nextSceneId": 30408,
+        "scoring": {
+          "believe": 1,
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
     "sceneId": 30408,
     "speaker": "Meero",
     "dialogue": "Wow, that sounds so interesting. I wish I could help you, but I don't really know much about your god. And, well, Carlo obviously can't help either unfortunately.",
     "bg": "park2",
     "char1": null,
-    "char2": "meero1",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1208,8 +1243,8 @@
     "speaker": "Carlo",
     "dialogue": "You know, we get that question a lot. Most of the time we just say: oh yeah it's because we are still both human beings and we should just let our differences slide and yada yada yada. But honestly speaking, it kind of gets deeper than that. I think we became close because of what made us different.",
     "bg": "park2",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1224,8 +1259,8 @@
     "speaker": "Carlo",
     "dialogue": "I was born to a religious family, actually. But, I never really connected with the practices that they did. Growing up, I didn't really believe that a god of some kind existed, there was lots of contradictory logic here and there, but, the thing that annoyed me the most was how many people would fall under the ritualism aspect. People would overly devote themselves to their religion and they would lose sight of basic things like human love and kindness. I hated it, and it became apparent that no miracles would save the day.",
     "bg": "park2",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1260,8 +1295,8 @@
     "speaker": "Meero",
     "dialogue": "Me on the other hand, my religion is about how we as humans must live a life full of zen and kindness. Good acts, self control, and patience, which I will not talk about mine, are aspects in my religion but inner peace and meditation are the most important ones. I've always been a strong believer in my religion, but like clearly, I've never been the kind to practice those values. And that doesn't mean that I never tried to, it's just that, I've never pushed myself over that hill, because I didn't feel like I was ready yet.",
     "bg": "park2",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
@@ -1269,8 +1304,7 @@
         "nextSceneId": 30412,
         "scoring": {
           "trust": -5,
-          "believe": 5,
-          "doing": -1
+          "believe": 5
         }
       },
       {
@@ -1294,17 +1328,275 @@
     ]
   },
   {
-    "sceneId": 31406,
-    "speaker": "Carlo",
-    "dialogue": "Oh that's alright. Sorry also if our bickering bothered you, but it was nice meeting you. Come one Meero, we got a park to clean!",
-    "bg": "park1",
-    "char1": "carlo1",
-    "char2": "meero1",
+    "sceneId": 30412,
+    "speaker": "Meero",
+    "dialogue": "Fast forward to a few years, Carlo and I would meet each other in college. We were in the same section in one of our faith classes and we had this thing where we had to talk about each others' faith and beliefs. And as you would expect, me and Carlo would have friction over that. But we were also kind of forced to work with each other.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
     "choices": [
       {
         "choiceNumber": 1,
         "description": "nxt",
-        "nextSceneId": 31407,
+        "nextSceneId": 30413,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30413,
+    "speaker": "Carlo",
+    "dialogue": "While yes, we tried to look past each others' differences and focus on what makes us similar, but, when you think about it, it was our initial disdain for each other that would force us to look that way in the first place. Meero was the type of religious person I wouldn't like, the super devoted person in belief who lacked in action, but Meero was aware of himself for that. And he was humble about it, he understood that deep down his version of his faith didn't feel right even though he was still a strong believer in his religion.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30414,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30414,
+    "speaker": "Meero",
+    "dialogue": "And for me, it was how much his journey made sense to me. I understood how he got to the point where he gave up on his religion, and it kind of resonated with me. In a way, it pushed me to understand the importance of making sure my faith wasn't just a one dimensional belief system. I still have a long way to go before I achieve total integral faith, but Carlo in a way helped set me on that path.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I think I understand it now, faith is not just about believing, but it is also about doing and entrusting.",
+        "nextSceneId": 30416,
+        "scoring": {
+          "doing": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I think I get it, faith can also help us inspire others to do good, even if we have different beliefs.",
+        "nextSceneId": 30416,
+        "scoring": {
+          "doing": 2,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I don't know. It kinda sounds to me like you guys became closer through other means.",
+        "nextSceneId": 30415,
+        "scoring": {
+          "trust": -2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30415,
+    "speaker": "Carlo",
+    "dialogue": "I guess we also still did become closer because of our other common interests. But I think the point is that our differences don't always have to make us work against each other.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30416,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30416,
+    "speaker": "Meero",
+    "dialogue": "You know, after having that talk, I think I can help you answer your question about faith. Maybe faith is the light that guides you, even if the direction it is going to seems uncertain, choosing to trust it is what helps make up faith. And your belief in it is what makes it special.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I don't know, I still feel skeptical about it",
+        "nextSceneId": 30147,
+        "scoring": {
+          "believe": 2,
+          "trust": -1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I think that really helps me a lot.",
+        "nextSceneId": 30418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30417,
+    "speaker": "Carlo",
+    "dialogue": "I've seen lots of religious dogmatism back then, but, to be honest, you seem very different. I think it's the fact that you still decided to be curious and understand who gave you this job and why is a part of actually understanding what faith is. I think all that's left is for you to believe it, and that decision is up to you.",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 30418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30418,
+    "speaker": "Meero",
+    "dialogue": "And hey, will you look at that! We finished cleaning, well it was nice chatting with you. I hope our little convo could have at least helped a bit. See you at the festival tonight!",
+    "bg": "park2",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Nice meeting you guys!",
+        "nextSceneId": 30419,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Thanks for the insights!",
+        "nextSceneId": 30419,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 30419,
+    "speaker": "",
+    "dialogue": "You spend a few hours in the park and reflect on what you have learned. I think we can safely say that...",
+    "bg": "park1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I need to continue to do the will of God who sent me, and I can achieve integral faith",
+        "nextSceneId": 30420,
+        "scoring": {
+          "doing": 4
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I need to put my trust in God's will for me even if I am uncertain",
+        "nextSceneId": 30420,
+        "scoring": {
+          "trust": 4
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "There are still many details that are unclear",
+        "nextSceneId": 30420,
+        "scoring": {
+          "believe": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 30420,
+    "speaker": "",
+    "dialogue": "During the festival I decided that I am going to...",
+    "bg": "park1",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Continue to find ways to express my newfound understanding of faith",
+        "nextSceneId": 4201,
+        "scoring": {
+          "doing": 1,
+          "trust": 1,
+          "believe": 1
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Continue to keep seeking answer on what faith could be",
+        "nextSceneId": 4201,
+        "scoring": {
+          "trust": -1,
+          "doing": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Move away from my mission and seek new answers",
+        "nextSceneId": 4201,
+        "scoring": {
+          "believe": -1,
+          "trust": -2,
+          "doing": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4101,
+    "speaker": "",
+    "dialogue": "It is now time for the festival! As you go around the stalls you catch up with some familiar faces",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4102,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4102,
+    "speaker": "Carlo",
+    "dialogue": "Hey there {player.name}! It is so good to see you again here! Have you been enjoying it so far?",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It's been great!",
+        "nextSceneId": 4103,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Hey! It's nice seeing you guys again!",
+        "nextSceneId": 4103,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4201,
+    "speaker": "",
+    "dialogue": "It is now time for the festival! As you go around the stalls you catch up with some familiar faces",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4202,
         "scoring": null
       }
     ]
