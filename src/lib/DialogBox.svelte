@@ -23,7 +23,10 @@
 <style>
 	.dialog-wrap {
 		position: relative;
-		width: 100%;
+		width: 80vw;
+		max-width: 850px;
+		margin-left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.speaker-tab {
