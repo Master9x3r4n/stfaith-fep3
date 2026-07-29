@@ -102,18 +102,6 @@ export function selectChoice(choice) {
 		}
 	}
 
-	if (choice.routes && choice.routes.length > 0) {
-		computeEnding();
-
-		const route = choice.routes.find(
-			r => r.category === gameState.endingCategory || r.ending == gameState.ending
-		)
-
-		if (route) {
-			gameState.currentSceneId = route.nextSceneId
-		}
-	}
-
 	if (choice.nextSceneId !== undefined) {
 		gameState.currentSceneId = choice.nextSceneId
 	}

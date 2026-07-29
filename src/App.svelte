@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte'
-	import { gameState, currentScene, loadScenes, selectChoice, loadStart } from './lib/gameState.svelte.js'
+	import { gameState, currentScene, loadScenes, selectChoice, loadStart, computeEnding } from './lib/gameState.svelte.js'
 	import SceneDisplay from './lib/SceneDisplay.svelte'
 	import DialogBox from './lib/DialogBox.svelte'
 	import ChoicesPanel from './lib/ChoicesPanel.svelte'
@@ -23,6 +23,7 @@
 	function handleNext() {
 		const choice = scene?.choices[0]
 		if (choice?.description === 'final') {
+			computeEnding();
 			gameState.status = 'final'
 		}
 		else if (choice) selectChoice(choice)
