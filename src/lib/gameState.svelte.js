@@ -73,7 +73,7 @@ export async function loadStart() {
  * Fetches scenes.json and starts the game at the first scene in the array.
  * @param {string} url
  */
-export async function loadScenes(url = '/scenes.json') {
+export async function loadScenes(url = './scenes.json') {
 	gameState.status = 'loading'
 	gameState.error = null
 	try {

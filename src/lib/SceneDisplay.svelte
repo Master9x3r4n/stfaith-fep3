@@ -1,5 +1,5 @@
 <script>
-	const IMAGE_DIR = '/scenes'
+	const IMAGE_DIR = './scenes'
 	const IMAGE_EXT = 'png'
 
 	/** @type {{ bg?: string, char1?: string, char2?: string }} */
