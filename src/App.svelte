@@ -1,11 +1,12 @@
 <script>
 	import { onMount } from 'svelte'
-	import { gameState, currentScene, loadScenes, selectChoice, loadStart, player } from './lib/gameState.svelte.js'
+	import { gameState, currentScene, loadScenes, selectChoice, loadStart } from './lib/gameState.svelte.js'
 	import SceneDisplay from './lib/SceneDisplay.svelte'
 	import DialogBox from './lib/DialogBox.svelte'
 	import ChoicesPanel from './lib/ChoicesPanel.svelte'
     import TextInput from './lib/TextInput.svelte';
     import TitleScreen from './lib/TitleScreen.svelte';
+    import EndingScreen from './lib/EndingScreen.svelte';
 
 	onMount(() => {
 		loadStart()
@@ -40,13 +41,7 @@
 	{:else if gameState.status === 'start'}
 		<TitleScreen onclick={handleStart}/>
 	{:else if gameState.status === 'final'}
-		<div class="status-message">
-			<div>The story has ended.</div>
-			<div>Believe: {player.score.believe}</div>
-			<div>Doing: {player.score.doing}</div>
-			<div>Trust: {player.score.trust}</div>
-			<button onclick={loadStart}>Restart</button>
-		</div>
+		<EndingScreen onclick={loadStart}/>
 	{:else if scene}
 		<SceneDisplay bg={scene.bg} char1={scene.char1} char2={scene.char2}/>
 
@@ -65,8 +60,6 @@
 			/>
 		</div>
 	{/if}
-
-	<footer>credits</footer>
 </main>
 
 <style>
