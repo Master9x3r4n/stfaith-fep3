@@ -4,14 +4,21 @@
     /** @type {{onclick?: () => void}} */
     let {onclick} = $props()
     let name = $state('');
+    let err = $state('')
 
     function handleClick() {
-        player.name = name;
-        onclick?.()
+        if (name.length > 0 && name.length < 11) {
+            player.name = name;
+            onclick?.()
+        }
+        else {
+            err = 'Must be 1 to 10 characters'
+        }
     }
 </script>
 
 <div class='text-input'>
+    <div class="error">{err}</div>
     <input bind:value={name}/>
     <button onclick={handleClick}>next</button>
 </div>
@@ -58,5 +65,9 @@
 		font-size: 1.05rem;
 		font-weight: 600;
 		padding: 10px 10px;
+    }
+
+    .error {
+        color: salmon;
     }
 </style>
