@@ -135,7 +135,7 @@ export function computeEnding() {
 		gameState.endingCategory = 'integral'
 		gameState.ending = `integral`
 	}
-	else if (score <= 5) {
+	else if (score <= 7) {
 		gameState.endingCategory = 'leaning'
 		gameState.ending = `${labels[attribute]}`
 	}
