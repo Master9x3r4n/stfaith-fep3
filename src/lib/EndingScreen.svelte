@@ -43,7 +43,7 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 10rem;
+		gap: 5rem;
 		align-items: center;
 		justify-content: center;
 		font-family: var(--font-display);
@@ -56,7 +56,7 @@
     .scores {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .inner {
@@ -67,6 +67,7 @@
 
     .title {
 		font-family: "Oleo Script", system-ui;
+        margin: 1rem;
         font-weight: 700;
         font-style: normal;
         font-size: 3rem;
@@ -89,6 +90,7 @@
 		font-size: 1.05rem;
 		font-weight: 600;
         width: 7rem;
+        margin-top: 6rem;
     }
 
     button:hover {
