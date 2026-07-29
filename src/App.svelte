@@ -5,6 +5,7 @@
 	import DialogBox from './lib/DialogBox.svelte'
 	import ChoicesPanel from './lib/ChoicesPanel.svelte'
     import TextInput from './lib/TextInput.svelte';
+    import TitleScreen from './lib/TitleScreen.svelte';
 
 	onMount(() => {
 		loadStart()
@@ -37,10 +38,7 @@
 	{:else if gameState.status === 'error'}
 		<div class="status-message">Couldn't load scenes: {gameState.error}</div>
 	{:else if gameState.status === 'start'}
-		<div class="status-message">
-			<div>STFAITH FEP3</div>
-			<button onclick={handleStart}>Start Game</button>
-		</div>
+		<TitleScreen onclick={handleStart}/>
 	{:else if gameState.status === 'final'}
 		<div class="status-message">
 			<div>The story has ended.</div>
