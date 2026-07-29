@@ -3,16 +3,16 @@
 
 :root {
 	--color-bg: #f4ece0;
-	--color-box: #FFC773;
+	--color-box: rgba(255, 199, 115, 0.8);
 	--color-box-deep: #f5b85c;
-	--color-box-hover: #ffd696;
+	--color-box-hover: rgba(255, 214, 150, 0.95);
 	--color-text: #2b2116;
 	--color-text-soft: #6b5c48;
 
 	--font-display: "Roboto Slab", serif;
 	--font-body: "Playwrite NZ Basic", cursive;
 
-	--radius: 14px;
+	--radius: 8px;
 	--shadow-box: 0 6px 18px rgba(43, 33, 22, 0.14);
 }
 

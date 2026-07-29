@@ -279,7 +279,7 @@
     "sceneId": 16,
     "speaker": "Clair",
     "dialogue": "So this place over here is my farm. I mostly work here with my friend Elaina. We provide fresh produce for the town with the crops we grow here. We mostly work during the whole week except for Sundays, which we spend the time going to the church.",
-    "bg": "field",
+    "bg": "farm",
     "char1": "clair",
     "char2": null,
     "choices": [
@@ -1002,7 +1002,7 @@
       {
         "choiceNumber": 1,
         "description": "nxt",
-        "nextSceneId": 4101,
+        "nextSceneId": 4201,
         "scoring": null
       }
     ]
@@ -1195,12 +1195,21 @@
     "sceneId": 31407,
     "speaker": "",
     "dialogue": "Meero and Carlo get to work and start cleaning the park. Meanwhile, you tell them about how you believe God sent you.",
-    "bg": "\"I really believe that God sent me for a reason\": 30408 (b=2",
-    "char1": "t=3)",
+    "bg": "park2",
+    "char1": null,
     "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
+        "description": "I really believe that God sent me for a reason",
+        "nextSceneId": 30408,
+        "scoring": {
+          "believe": 2,
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
         "description": "I'm still unsure of what faith is and why I have to seek its meaning",
         "nextSceneId": 30408,
         "scoring": {
@@ -1422,7 +1431,7 @@
       {
         "choiceNumber": 1,
         "description": "I don't know, I still feel skeptical about it",
-        "nextSceneId": 30147,
+        "nextSceneId": 30417,
         "scoring": {
           "believe": 2,
           "trust": -1
@@ -1569,7 +1578,7 @@
     "dialogue": "Hey there {player.name}! It is so good to see you again here! Have you been enjoying it so far?",
     "bg": "festival",
     "char1": "carlo",
-    "char2": "meero",
+    "char2": null,
     "choices": [
       {
         "choiceNumber": 1,
@@ -1586,6 +1595,146 @@
     ]
   },
   {
+    "sceneId": 4103,
+    "speaker": "Meero",
+    "dialogue": "Nice seeing you here. Carlo and I have been exploring the different stalls. How about you, how did your faith journey go? ",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It went well, I think I understand faith better now",
+        "nextSceneId": 4104,
+        "scoring": {
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I don't think I was able to find what I wanted about faith",
+        "nextSceneId": 4107,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4104,
+    "speaker": "Carlo",
+    "dialogue": "Oh? What did you learn?",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Faith helps us understand what makes life truly meaningful and challenges us to find that purpose",
+        "nextSceneId": 4105,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Faith helps us define and connect God and seek to understand Him better so we can put our full trust in His blessings for us.",
+        "nextSceneId": 4105,
+        "scoring": {
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith encourages us to listen to God's will and empowers us to also help others find the light in Him",
+        "nextSceneId": 4105,
+        "scoring": {
+          "doing": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4105,
+    "speaker": "Meero",
+    "dialogue": "That is very nice to hear!",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I also learned from you two about the value of respect for each others' beliefs. Even if we may have a different perspective on things",
+        "nextSceneId": 4106,
+        "scoring": {
+          "doing": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I also learned that faith isn't something we must always follow blindly, there are dimensions to faith that we must learn to properly value",
+        "nextSceneId": 4106,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I also learned that valuing my faith is also my own way of creating a connection with God",
+        "nextSceneId": 4106,
+        "scoring": {
+          "trust": 2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4106,
+    "speaker": "Meero",
+    "dialogue": "I am glad you were able to find what you were looking for.",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4108,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4107,
+    "speaker": "Carlo",
+    "dialogue": "That's unfortunate. But I guess you can now enjoy the festival with us.",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4108,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4108,
+    "speaker": "",
+    "dialogue": "You then go on to celebrate the festival with Carlo and Meero for the next 30 minutes. You also remember that Clair is in the festival so you decide to go look for her",
+    "bg": "festival",
+    "char1": "carlo",
+    "char2": "meero",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 401,
+        "scoring": null
+      }
+    ]
+  },
+  {
     "sceneId": 4201,
     "speaker": "",
     "dialogue": "It is now time for the festival! As you go around the stalls you catch up with some familiar faces",
@@ -1597,6 +1746,585 @@
         "choiceNumber": 1,
         "description": "nxt",
         "nextSceneId": 4202,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4202,
+    "speaker": "Father Lorens",
+    "dialogue": "Hello, {player.name}! It is nice seeing you here. How are you?",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It's been great!",
+        "nextSceneId": 4203,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Hello! It's nice seeing you two.",
+        "nextSceneId": 4203,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4203,
+    "speaker": "Brother Byron",
+    "dialogue": "It's a pleasure seeing you here. Father Lorens and I were just exploring the stalls. How about you, has your faith journey led you to somewhere interesting?",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "It went well, I think I understand faith better now",
+        "nextSceneId": 4204,
+        "scoring": {
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I don't think I was able to find what I wanted about faith",
+        "nextSceneId": 4207,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4204,
+    "speaker": "Father Lorens",
+    "dialogue": "Oh? What did you learn?",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Faith helps us understand what makes life truly meaningful and challenges us to find that purpose",
+        "nextSceneId": 4205,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Faith helps us define and connect God and seek to understand Him better so we can put our full trust in His blessings for us.",
+        "nextSceneId": 4205,
+        "scoring": {
+          "trust": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith encourages us to listen to God's will and empowers us to also help others find the light in Him",
+        "nextSceneId": 4205,
+        "scoring": {
+          "doing": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4205,
+    "speaker": "Brother Byron",
+    "dialogue": "That is very nice to hear!",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I also learned from you two that my own journey to discover the meaning of faith has let me allow faith to transform me as a person. The meaning of faith wasn't in the end, it was the choices I made that brought me there.",
+        "nextSceneId": 4206,
+        "scoring": {
+          "doing": 3
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I also learned that faith as a way of life must be an integrated way of our doing, believing, and trusting in relation to God's Word",
+        "nextSceneId": 4206,
+        "scoring": {
+          "believe": 3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I also learned that faith can bring us closer to God if we are willing to listen to what He has to say for us.",
+        "nextSceneId": 4206,
+        "scoring": {
+          "trust": 1,
+          "doing": 2
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 4206,
+    "speaker": "Brother Byron",
+    "dialogue": "I am glad you were able to find what you were looking for.",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4208,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4207,
+    "speaker": "Father Lorens",
+    "dialogue": "That's unfortunate. But I guess you can now enjoy the festival with us.",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 4208,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 4208,
+    "speaker": "",
+    "dialogue": "You then go on to celebrate the festival with Father Lorens and Brother Byron for the next 30 minutes. You also remember that Clair is in the festival so you decide to go look for her",
+    "bg": "festival",
+    "char1": "lorens",
+    "char2": "byron",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 401,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 401,
+    "speaker": "",
+    "dialogue": "While searching you stumble upon a new friend",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 402,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 402,
+    "speaker": "Elaina",
+    "dialogue": "Hiiiiii! You must be {player.name}, it's so nice to finally meet you!",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 403,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 403,
+    "speaker": "Elaina",
+    "dialogue": "Clair told me all about you,she should be here soon. I heard all about your mission of faith. Did you find what you were looking for?",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Yes, I think I did",
+        "nextSceneId": 405,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Unfortunately, no",
+        "nextSceneId": 404,
+        "scoring": {
+          "believe": 1,
+          "trust": -1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 404,
+    "speaker": "Elaina",
+    "dialogue": "Oh well, that's a shame. Anyway, it looks like Clair is now here!",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 405,
+    "speaker": "Elaina",
+    "dialogue": "That's great! What did you learn?",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "The reason why I was sent to learn more about faith in the first place was so that I could be able to learn how to grow my own faith in God.",
+        "nextSceneId": 406,
+        "scoring": {
+          "believe": 4,
+          "doing": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I was sent to learn more about faith to understand its dimensions so that I many learn how to not misuse them",
+        "nextSceneId": 406,
+        "scoring": {
+          "doing": 4,
+          "believe": 2,
+          "trust": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith is how we empower ourselves to look onto God and put all our trust in Him.",
+        "nextSceneId": 406,
+        "scoring": {
+          "trust": 4
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 406,
+    "speaker": "Elaina",
+    "dialogue": "Wow, that is very nice. Clair did say you were really eager to learn about why God sent you on this journey. Hey, speaking of Clair, look! I think that is her over there!",
+    "bg": "festival",
+    "char1": null,
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 407,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 407,
+    "speaker": "Clair",
+    "dialogue": "Hi Elaina! Hi {player.name}! I see you two finally met each other. It's good to see you again {player.name}, did you find what you wanted to learn about faith?",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I sure did!",
+        "nextSceneId": 409,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Unfortunately I didn't",
+        "nextSceneId": 408,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 408,
+    "speaker": "Clair",
+    "dialogue": "Oh well, I'm sorry to hear that. Maybe you just still need a little more time and searching and you will eventually find out.",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 411,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 409,
+    "speaker": "Clair",
+    "dialogue": "That is great to hear! What would you say was your biggest takeaway?",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "We must learn to properly exercise our faith as a whole, and not misuse its aspect to mistreat others and falsely lead ourselves",
+        "nextSceneId": 410,
+        "scoring": {
+          "doing": 3,
+          "trust": 2,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "Faith is not just about our trust in God, it is also about our religion and our obedience to Him. We must learn to exercise all those values",
+        "nextSceneId": 410,
+        "scoring": {
+          "doing": 2,
+          "trust": 3,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "Faith is not just important spiritually, but personally too. It gives us strength and hope when faced with uncertainty in life. But its connection to God allows us to find another source of strength.",
+        "nextSceneId": 410,
+        "scoring": {
+          "doing": 2,
+          "trust": 2,
+          "believe": 3
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 410,
+    "speaker": "Clair",
+    "dialogue": "Wow! You really did learn a whole lot about faith! I'm glad your journey went well for you.",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I couldn't have done it without the friends I made along the way",
+        "nextSceneId": 411,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "It was thanks to everyone's wisdom that I was able to learn more about faith",
+        "nextSceneId": 411,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 411,
+    "speaker": "Elaina",
+    "dialogue": "Hey look! The main event is about to begin. Let's all go there together!",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 412,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 412,
+    "speaker": "Clair",
+    "dialogue": "Come on, {player.name}! We wouldn't want to miss this.",
+    "bg": "festival",
+    "char1": "clair",
+    "char2": "elaina",
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 413,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 413,
+    "speaker": "",
+    "dialogue": "As you start to follow your new friends, suddenly everything around you starts to slow down...",
+    "bg": "festival",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "Wait up guys!",
+        "nextSceneId": 414,
+        "scoring": null
+      },
+      {
+        "choiceNumber": 2,
+        "description": "What is happening?",
+        "nextSceneId": 414,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 414,
+    "speaker": "???",
+    "dialogue": "Well that was an exciting journey wasn't it?",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 415,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 414,
+    "speaker": "???",
+    "dialogue": "I'm very sorry to cut you short. I just wanted to have a quick word with you. But I'm just very curious to hear if you were able to learn what faith is?",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "I was able to learn the value of having faith and what it is",
+        "nextSceneId": 415,
+        "scoring": {
+          "trust": 2,
+          "believe": 2
+        }
+      },
+      {
+        "choiceNumber": 2,
+        "description": "I unfortunately, didn't believe in finding the answer",
+        "nextSceneId": 416,
+        "scoring": {
+          "trust": -3,
+          "believe": -3,
+          "doing": -3
+        }
+      },
+      {
+        "choiceNumber": 3,
+        "description": "I don't think I have a very concrete answer yet, but I understand it better now",
+        "nextSceneId": 417,
+        "scoring": {
+          "believe": 3,
+          "trust": 3,
+          "doing": 1
+        }
+      }
+    ]
+  },
+  {
+    "sceneId": 415,
+    "speaker": "???",
+    "dialogue": "That is very good to hear. In your short journey, you were able to meet a lot of friends who were able to teach you the value of faith in one way or the other",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 416,
+    "speaker": "???",
+    "dialogue": "Well, that is a shame. But then again, it was always your choice if you wanted to go on with this journey or not. But maybe one day, you will feel like taking up the task again.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 417,
+    "speaker": "???",
+    "dialogue": "And I think that is still wonderful. I never expected you to find an answer immediately.  What is important is that you were able to understand your own faith's strengths and weaknesses. Maybe one day you will get it, but it is only through learning that you will grow to become better.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 418,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 418,
+    "speaker": "???",
+    "dialogue": "I think that is it for me. I hope you will be able to reflect upon this journey I bestowed upon you. And maybe you might find something very valuable...",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "nxt",
+        "nextSceneId": 419,
+        "scoring": null
+      }
+    ]
+  },
+  {
+    "sceneId": 419,
+    "speaker": "",
+    "dialogue": "Suddenly the light starts to fade away. And when you open your eyes, you find yourself back at the festival. You had a very interesting journey today, but perhaps now it is time to enjoy the festivities and ponder if you truly understand what faith is.",
+    "bg": "matrix",
+    "char1": null,
+    "char2": null,
+    "choices": [
+      {
+        "choiceNumber": 1,
+        "description": "final",
+        "nextSceneId": 420,
         "scoring": null
       }
     ]

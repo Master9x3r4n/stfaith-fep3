@@ -33,7 +33,7 @@
 		position: absolute;
 		top: -45px;
 		left: 24px;
-		background: #9A819A;
+		background: rgba(154, 129, 154, 0.8);
 		color: #FDF6E3;
 		font-family: var(--font-body);
 		font-weight: 700;
@@ -54,7 +54,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 10px;
-		border: 5px solid darksalmon;
+		border: 4px solid darksalmon;
 	}
 
 	.dialog-box.no-speaker {
