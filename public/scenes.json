@@ -498,7 +498,7 @@
         "description": "Sure thing, I'd love to understand my religion better.",
         "nextSceneId": 28,
         "scoring": {
-          "trust": 3
+          "trust": 2
         }
       },
       {
@@ -1161,7 +1161,7 @@
         "nextSceneId": 30408,
         "scoring": {
           "believe": 2,
-          "trust": 3
+          "trust": 2
         }
       },
       {
@@ -1205,7 +1205,7 @@
         "nextSceneId": 30408,
         "scoring": {
           "believe": 2,
-          "trust": 3
+          "trust": 2
         }
       },
       {
@@ -1607,7 +1607,7 @@
         "description": "It went well, I think I understand faith better now",
         "nextSceneId": 4104,
         "scoring": {
-          "trust": 3
+          "trust": 1
         }
       },
       {
@@ -1785,7 +1785,7 @@
         "description": "It went well, I think I understand faith better now",
         "nextSceneId": 4204,
         "scoring": {
-          "trust": 3
+          "trust": 1
         }
       },
       {
@@ -2102,7 +2102,7 @@
         "nextSceneId": 410,
         "scoring": {
           "doing": 2,
-          "trust": 3,
+          "trust": 2,
           "believe": 2
         }
       },
@@ -2243,7 +2243,7 @@
         "nextSceneId": 417,
         "scoring": {
           "believe": 3,
-          "trust": 3,
+          "trust": 2,
           "doing": 1
         }
       }
