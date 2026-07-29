@@ -16,7 +16,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
     .holder {
-        background-image: url('../../public/scenes/bg.png');
+        background-image: url('/scenes/bg.png');
         height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -45,6 +45,12 @@
 		font-weight: 600;
         width: 7rem;
     }
+
+    button:hover {
+		background: var(--color-box-hover);
+		transform: translateY(-2px);
+		color: var(--color-text-soft);
+	}
 
     .title {
 		font-family: "Oleo Script", system-ui;

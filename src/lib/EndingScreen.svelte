@@ -7,28 +7,38 @@
     }
 </script>
 
-<div class="status-message">
-    <div class="title">The story has ended.</div>
-    <div class="scores">
-        <div class="inner">
-            <div>Believe: {player.score.believe}</div>
-            <div>Doing: {player.score.doing}</div>
-            <div>Trust: {player.score.trust}</div>
+<div class="bg">
+    <div class="status-message">
+        <div class="title">The story has ended.</div>
+        <div class="scores">
+            <div class="inner">
+                <div>Believe: {player.score.believe}</div>
+                <div>Doing: {player.score.doing}</div>
+                <div>Trust: {player.score.trust}</div>
+            </div>
+            <div>
+                {#if gameState.endingCategory === 'integral'}
+                    You have obtained <span class="ending">total integral faith.</span>
+                {:else if gameState.endingCategory === 'leaning'}
+                    You lean towards <span class="ending">{gameState.ending}.</span>
+                {:else}
+                    You heavily lean towards <span class="ending">{gameState.ending}.</span>
+                {/if}
+            </div>
         </div>
-        <div>
-            {#if gameState.endingCategory === 'integral'}
-                You have obtained <span class="ending">total integral faith.</span>
-            {:else if gameState.endingCategory === 'leaning'}
-                You lean towards <span class="ending">{gameState.ending}.</span>
-            {:else}
-                You heavily lean towards <span class="ending">{gameState.ending}.</span>
-            {/if}
-        </div>
+        <button onclick={handleClick}>Restart</button>
     </div>
-    <button onclick={handleClick}>Restart</button>
 </div>
 
 <style>
+    .bg {
+        background-image: url('/scenes/ending.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;           
+    }
+
     .status-message {
 		height: 100%;
 		display: flex;
@@ -80,6 +90,12 @@
 		font-weight: 600;
         width: 7rem;
     }
+
+    button:hover {
+		background: var(--color-box-hover);
+		transform: translateY(-2px);
+		color: var(--color-text-soft);
+	}
 
     .ending {
         -webkit-text-fill-color:tomato;
